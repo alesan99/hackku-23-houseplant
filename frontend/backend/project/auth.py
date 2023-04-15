@@ -1,5 +1,5 @@
 import functools
-
+import json
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
@@ -62,9 +62,31 @@ def login():
 
     return render_template('auth/login.html')
 
-@bp.route('/quiz')
+@bp.route('/quiz', methods=('GET','POST'))
 def quiz():
-    return render_template('auth/index.html')
+    with open("./project/templates/quiz.json") as f:
+        var = json.load(f)
+        id = session['user_id']
+        if request.method == 'GET':
+            db = get_db()
+            error = None
+            user = db.execute(
+                'SELECT * FROM quiz WHERE user_id = ?', (id,)
+            ).fetchall()
+        elif request.method == "POST":
+            db = get_db()
+            error = None
+            user = db.execute(
+                'SELECT * FROM quiz WHERE user_id = ?', (id,)
+            ).fetchall()
+            user_count = len(user)
+            if user_count< 3:
+                error = 'Please check all answers.'
+            flash(error)
+        return render_template('auth/quiz.html', user = user,questions = var["Quiz"])
+
+
+    #return render_template('auth/index.html')
 
 @bp.before_app_request
 def load_logged_in_user():
