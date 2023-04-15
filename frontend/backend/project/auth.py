@@ -8,6 +8,15 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from project.db import get_db
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
+def login_required(view):
+    @functools.wraps(view)
+    def wrapped_view(**kwargs):
+        if g.user is None:
+            return redirect(url_for('auth.login'))
+
+        return view(**kwargs)
+
+    return wrapped_view
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
     if request.method == 'POST':
@@ -62,9 +71,12 @@ def login():
 
     return render_template('auth/login.html')
 
+
+
 @bp.route('/quiz', methods=('GET','POST'))
+@login_required
 def quiz():
-    with open("./project/templates/quiz.json") as f:
+    with open("./project/templates/auth/quiz.json") as f:
         var = json.load(f)
         id = session['user_id']
         if request.method == 'GET':
@@ -102,14 +114,5 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('index'))
+    return redirect(url_for('home'))
 
-def login_required(view):
-    @functools.wraps(view)
-    def wrapped_view(**kwargs):
-        if g.user is None:
-            return redirect(url_for('auth.login'))
-
-        return view(**kwargs)
-
-    return wrapped_view
