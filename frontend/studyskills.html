@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html {
+            scroll-behavior:smooth
+        }
+    </style>
+<link rel="stylesheet" href="styles.css">
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySkill</title>
+    <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f511.svg" 
+    type="image/x-icon">
+    <!--the above icon is just a placeholder until i develop a logo -bella -->
+</head>
+<body>
+    <header>
+    <div class="topnav">
+        <a href="landing.html">Home</a>
+        <a href="/frontend/backend/project/templates/base.html">Sign In</a>
+    </div>
+    </header> 
+    <body>
+        <section class="section" id="studyskills">
+            <div id="typnesntoolscontent">
+                <style>
+                    .column {
+                      float: left;
+                      width: 50%;
+                    }
+                    .row:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+                </style>
+                <body>
+                <div class="row">
+                    <div class="column">
+                        <h1>StudySkill</h1>
+                        <p>This is the StudySkill planner. Description here please, thanks future me! </br>
+                            Blahjksdgfjhv sdjvhbh sjhchcvbmc jgasjd, ashdfjhd. kasjhdhj. kjs. <br>
+                        </p>
+                        <p>
+                            1. Select jahgsdjhfg <br>
+                            2. Do taeyjfgshd <br>
+                            3. Blahjdfsdjfbv <br>
+                            4. Relish. <br>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <style >
+                            table, th, td {
+                                border: solid black;
+                                border-collapse: collapse;
+                            }
+                        </style>
+                        <table style="width:100%" height="100%">
+                            <tr height="200px">
+                                <th width="33.3%">Issue 1<th>
+                                <th width="33.3%">Issue 2<th>
+                                <th width="33.4%">Issue 3<th>
+                            </tr>
+                            <tr height="200px">
+                                <th>Issue 4<th>
+                                <th>Issue 5<th>
+                                <th>Issue 6<th>
+                            </tr>
+                            <tr height="200px">
+                                <th>Issue 7<th>
+                                <th>Issue 8<th>
+                                <th>Issue 9<th>
+                            </tr>
+                        </table>
+                        <button onclick="window.location.href='#personalizedplan';">SUBMIT</button>
+                        <!-- ^ maybe just make this table a box w css later? -->
+                    </div>
+                </div> 
+    <div class="section" id="personalizedplan">
+        <h1>Your personalized StudySkill plan:</h1>
+        <style >
+            table, th, td {
+                border: solid black;
+                border-collapse: collapse;
+            }
+        </style>
+        <table style="width:100%">
+            <tr height="500px">
+                <th>Personalized Plan Output Here<th>
+            </tr>
+        </table>
+        <!--these buttons need to be able to 1) save the personalized plan to the users account,
+        and 2) clear the answers and personalized plan-->
+        <button>Save to Account</button>
+        <button>Reset</button>
+    </div>    
+    </body>
+</html>

@@ -1,0 +1,528 @@
+                           Math 125 - Calculus I
+                           Spring 2023 Syllabus
+Contents
+1    Instructors                                                                                                                                                2
+    1.1 Lecture Instructors’ Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          2
+    1.2 Lab Instructors’ Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          2
+
+2    Structure of Math 125                                                                                                                                       3
+    2.1 Disclaimers . . . . . . . . . . . . . . . . .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    3
+    2.2 Textbook & Materials . . . . . . . . . . .      .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    3
+    2.3 Assessment and Withdrawal Dates . . .           .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    3
+    2.4 Grading System . . . . . . . . . . . . . .      .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    4
+    2.5 Grade Disputes . . . . . . . . . . . . . .      .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    4
+    2.6 The Structure of Lecture Sections . . . .       .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    4
+    2.7 The Structure of Laboratory Sections . .        .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    4
+    2.8 The Lecture and Lab Participation . . . .       .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    5
+    2.9 The Gateway Exams . . . . . . . . . . .         .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    5
+    2.10 Structure of Assignments and Assessments           .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .    6
+
+3
+                       KU Mathematics
+     Math 125 Resources Outside the Classroom
+    3.1 Math Help Room . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    3.2   Supplemental Instruction (SI)     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                                                                                                                                 7
+                                                                                                                                                                 7
+                                                                                                                                                                 7
+    3.3   Group Work and Tutors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          7
+
+4    Course Content                                                                                                                                             7
+    4.1 Prerequisites . . . . . . . . . . . . . . .   . .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   7
+    4.2 Learning Objectives and Course Content          .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   7
+    4.3 Course Goals and Topics . . . . . . . .       . .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   8
+    4.4 Keys to Success in Math 125 . . . . . .       . .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   9
+    4.5 General Comments on Study Habits . .          . .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   9
+
+5    Additional KU Policies                                                                                                                                     10
+    5.1 Diversity and Inclusion . . . . . . . . . . . . . .             .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   10
+    5.2 Policy on Students with Special Needs . . . . .                 .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   10
+    5.3 Religious Holidays . . . . . . . . . . . . . . . . .            .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   10
+    5.4 Excused Absences and Making Up Missed Work                      .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   10
+    5.5 Policy on Academic Misconduct . . . . . . . . .                 .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   10
+    5.6 Intellectual Property . . . . . . . . . . . . . . .             .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   11
+    5.7 Commercial Note Taking . . . . . . . . . . . . .                .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   11
+    5.8 Policy on Mask Wearing . . . . . . . . . . . . .                .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   11
+    5.9 KU Firearm Policy . . . . . . . . . . . . . . . .               .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   11
+1       Instructors
+1.1       Lecture Instructors’ Information
+Students attend lectures three times per week MWF and they will attend laboratory sections two times
+per week (MW or TuTh) with a graduate teaching assistant (GTA).
+
+
+
+    Instructor             Instructor’s Email   Office                       Section    Time                Classroom
+    Dr. Tori Hudgins       thudgins@ku.edu      M 2-3 PM, TR 11AM-12PM       46968      MWF 1:00-1:50 PM    Budig 110
+    (Course Coordinator)   Zoom                 Snow 651A
+    Sungmin Won            goretti.won@ku.edu   Thurs 2-3 PM                 55792      MWF 8:00-8:50 AM    Snow 302
+                                                Snow 557
+    Monalisa Dutta         m819d903@ku.edu      Tues 2:30-3:30 PM            55863      MWF 1:00-1:50 PM    Strong 337
+                                                Snow 544
+
+
+1.2       Lab Instructors’ Information
+
+    Instructor             Instructor’s Email/Zoom      Office             Section     Time              Classroom
+    Rohitha Rathamsetty    rohitha.rathamsetty@ku.edu   Thurs     10:30-   46971       MW 9-9:50AM       Learned 1131
+                                                        11:30 AM
+                           Zoom                         Snow 621
+    Rohitha Rathamsetty    rohitha.rathamsetty@ku.edu   Thurs     10:30-   46970       MW 10-10:50AM     Learned 1131
+
+
+                           KU Mathematics
+                                                        11:30 AM
+                           Zoom                         Snow 621
+    Moein Moradi           moradi@ku.edu                Thurs 2-3 PM       46969       MW 2-2:50PM       Learned 1131
+                           Zoom, Password: 1111         Snow 551
+    Moein Moradi           moradi@ku.edu                Thurs 2-3 PM       47619       MW 3-3:50PM       Learned 1131
+                           Zoom, Password: 1111         Snow 551
+    Sungmin Won            goretti.won@ku.edu           Thurs 2-3 PM       55792       TuTh 8-8:50AM     Snow 302
+                           Zoom                         Snow 557
+    Jinjin Zhang           jinjinzhang@ku.edu           Thurs 2-3 PM       46972       TuTh 11-11:50AM   MS 106
+                           Zoom, Password: 125521       Snow 559
+    Monalisa Dutta         m819d903@ku.edu              Tues 2:30-3:30     55864       TuTh 1-2:15PM     Strong 337
+                                                        PM
+                           Zoom, Password: 142004       Snow 544
+    Logan Honeycutt        lrhoneycutt@ku.edu           Fri 2-3 PM         46973       TuTh 1-1:50PM     Wescoe 4071
+                           Zoom, Password: 4636         Snow 305
+    Logan Honeycutt        lrhoneycutt@ku.edu           Fri 2-3 PM         47618       TuTh 2-2:50PM     Wescoe 4071
+                           Zoom, Password: 4636         Snow 305
+
+
+
+
+                                                         2
+2     Structure of Math 125
+2.1     Disclaimers
+      This syllabus contains the basic information for MATH 125. Students should regularly visit the
+      course Canvas page to find their exam scores, assignment scores, course announcements, assign-
+      ments, detailed course schedule, and links to course materials.
+      Students must regularly check both their KU email and the course Canvas page .
+
+      The “Total” column of the Canvas grade book may at times be inaccurate but you can
+      contact Dr. Hudgins (the course coordinator, thudgins@ku.edu) at any time with questions. Dr.
+      Hudgins will hold additional office hours before drop dates to meet with students and discuss grades.
+
+2.2     Textbook & Materials
+      Textbook: Calculus Early Transcendentals, 4E, by Rogawski & Adams
+      Other Material Needed:
+           Achieve and iClicker App:
+             ∗ Achieve is the online homework platform and is accessed through Canvas.
+             ∗ iClicker is used in lecture to take attendance and collect your answers to questions.
+             ∗ You will have access to Achieve, iClicker and the E-book through “Auto access” on Canvas.
+             ∗ Make sure to use your KU email in Achieve and iClicker. By doing so, you should be
+
+                      KU Mathematics
+               auto-enrolled in the appropriate iClicker course for your lecture section. When registering
+               for Achieve, you may notice a “Willolabs” email address; this is correct and you should
+               NOT change it. This protects your data.
+             ∗ Visit https://www.iclicker.com/students/apps-and-remotes/apps to download the iClicker
+               app. (You may also purchase a physical iClicker remote, if not using a smartphone, tablet,
+               or laptop in class.)
+           Zoom App: All classes and the Help Room are in-person but some of the instructors will
+           hold office hours on Zoom, as needed.
+           Calculators and Midterms/Final Exams: Only basic or scientific calculators will
+           be permitted while taking exams. Calculators must not be able to perform calculus calculations
+           (limits, derivatives, integrals, series) and must have no graphing capabilities.
+
+2.3     Assessment and Withdrawal Dates
+
+ Exam               Day             Date                 Time           Content
+ Midterm 1          Tuesday         February 28th        5:50-7:50 PM   Sections 2.1-2.5, 2.7-2.8, 3.1-3.3, 3.7-3.8
+ Paper Gateway      Wed or Thurs    Lab 3/8 or 3/9                      Derivative Rules
+ Midterm 2          Tuesday         April 11th           5:50-7:50 PM   Sections 2.6, 3.1-3.10, 4.1-4.6
+ Final Exam         Thursday        May 11th             4:30-7:00 PM   Cumulative
+          Day        Date           Type
+          Monday     February 6th   Last day to withdraw/drop without a “W”
+          Monday     April 17th     Last day to withdraw from a class or the University
+
+
+                                                     3
+2.4     Grading System
+
+        A            B            C               D
+        ≥ 88%        ≥ 76%        ≥ 64%           ≥ 52%
+      Note that there are no plus/minus grades in the calculus sequence, and there will not be a curve.
+
+      Many assignments and assessments will have extra credit opportunities.
+
+      The following is a breakdown for Math 125 showing the components of the course and how much
+      each component is worth.
+
+        Final Exam                                   25%
+        Midterm 1                                    20%
+        Midterm 2                                    20%
+        Gateway                                      10%
+        Achieve Homework                              9%
+        Lab Worksheets                                8%
+        Lab Attendance                                2%
+        iClickers (Includes Lecture Attendance)       4%
+        In-Class Quizzes                              2%
+        Practice Quizzes and Surveys                  2%
+
+2.5     Grade Disputes  KU Mathematics
+All graded material will be become available under the laboratory section’s Canvas page. You can view
+the feedback by clicking on the grades. The instructors of Math 125 will check the grading of any
+assignment if the assignment was graded within the past two weeks; after two weeks, the instructors are
+not obligated to check the grading of an assignment. Initially contact your GTA before contacting your
+lecturer for any grade disputes.
+
+2.6     The Structure of Lecture Sections
+They are taught in the auditoriums. iClicker is used to take attendance. You may print the lecture notes
+on the week’s Canvas module before the class, if desired.
+
+2.7     The Structure of Laboratory Sections
+Laboratory sections meet twice per week with a graduate teaching assistant (your lab either meets on
+MW or TuTh). Very little to no lecturing is expected in the lab sections. Students will review the most
+recent material in small groups, work through problems that supplement lecture material, and have an
+opportunity to ask questions and receive feedback in a small classroom environment. 2% of the final
+grade is earned through laboratory sections’ attendance and participation; 8% of the final grade is earned
+for completing select problems on the worksheets correctly. The in-class quizzes and paper Gateway
+exam will be proctored during your laboratory meetings. Print the worksheets before the lab section, if
+possible, or write the questions down. You must also arrive on time; students marked ”late” may not be
+allowed to sit for a quiz or exam happening in lab that day.
+
+
+
+                                                          4
+2.8    The Lecture and Lab Participation
+      Lecture Participation
+          The attendance in Lecture is taken using iClicker (smartphone app or remote).
+          If you answer any iClicker question during a lecture, you will earn 1 point for participation for
+          entire session (this is one time only in each class). For each question that you answer correctly,
+          you will earn an additional 0.5 points.
+          iClicker points will be scored out of 75 total. However, you will have the opportunity to earn
+          up to 90 iClicker points (the cut off for extra credit) and there are approximately 100 iClicker
+          points provided in the semester.
+          It is recommended that you download the app to a smartphone or tablet. Make sure to use
+          your KU email to register, as you should then be autoenrolled in the appropriate iClicker
+          course for your lecture section. https://www.iclicker.com/students/apps-and-remotes/apps
+
+      Laboratory (Recitation) Participation
+          Lab instructors will take attendance each lab period and students will receive 1 point for each
+          lab period that they are present, on time, and participating.
+          Instructors may mark a student “late” on Canvas for arriving more than 10 minutes late or
+          leaving early (see below for policy). Instructors also reserve the right to mark a student “late”
+          on Canvas if they refuse to participate in group activities while in lab. Any time a student is
+          marked “late,” they receive 0.5 points for the day’s attendance.
+          If students are absent (and unexcused), they will receive 0 points for the day’s attendance.
+
+2.9
+                     KU Mathematics
+       The Gateway Exams
+Additional information regarding the Gateway exam can be found on Canvas.
+
+   Students can earn a score of either 0, 5, or 10 out of 10 on the Gateway (there are no other
+grades available). Students may retake the Gateway Exam as many times as they would like while the
+Gateway Exam is open; the highest grade earned will be counted.
+   • A full pass of 10/10 is a Gateway Exam with 8, 9, or 10 questions completely correct.
+   • A partial pass of 5/10 is a Gateway Exam with exactly 7 questions completely correct.
+   • A no pass of 0/10 is a Gateway Exam with 6 or less questions completely correct.
+   Students earn credit by passing either the paper (written) Gateway Exam or the computerized Gate-
+way Exam retakes.
+
+   A paper (written) Gateway Exam will be administered in laboratory (recitation) sections during the
+second lab section of Week 8 (3/8 or 3/9). Students who earn a full pass do not need to retake the
+computerized Gateway Exam. Students who earn a partial pass or no pass make retake the Gateway
+Exam.
+
+   Students who need to retake the computerized Gateway Exam will have opportunities to do so for
+the next two weeks, M-F from tentatively 1-5 pm. Exams will begin on the hour. Information about
+the computerized Gateway Exams, including deadlines and location, will become available on the Canvas
+course.
+
+                                                    5
+2.10   Structure of Assignments and Assessments
+ Lab Worksheets     Worksheet assignments are posted to the Lab Canvas weekly. Students are ex-
+                    pected to have a copy of this worksheet or the problems when they arrive in lab
+                    each week. Students will work in small groups and with their lab instructor to
+                    complete the worksheet.
+                    Students will receive up to 1 point for completing the worksheet, if clear effort to
+                    complete all problems is shown. Completion grade is assigned 0.5 points if the
+                    worksheet is started but incomplete, and 0 points if the worksheet is not begun
+                    or if there is no work shown for answers given.
+                    Students must upload their individual worksheet as a PDF to Canvas by 11:59
+                    pm on Friday each week.
+                    Some problems are marked with point values and will be graded for accuracy.
+                    There will be seven or more points available on each worksheet, but they will be
+                    graded out of an expected seven points. Any additional earned are extra credit.
+                    Late policy: Late worksheets will not be accepted. Instead, one worksheet will
+                    be dropped from the final grade.
+ Achieve Homework   Find a link on the week’s Canvas module.
+                    Achieve homework gives you instant feedback.
+                    You have 10 attempts for each question and no penalty for incorrect attempts
+                    before entering the correct answer.
+                    Late policy: Late Achieve homework assignments will not accepted. However,
+                    most of these will reopen on Monday, April 24 for Final Exam studying and
+                    students may use remaining attempts to earn up to full credit at this time.
+ Practice Quizzes
+                    KU Mathematics
+                    These are low-stakes extra credit assignments that may help prepare you for
+                    exams. These are available through Canvas. You have 10 attempts for each
+                    question and no penalty for incorrect attempts before entering the correct answer.
+                    Late policy: Late Practice Quizzes will not accepted. However, most of these
+                    will reopen on Monday, April 24 for Final Exam studying and students may use
+                    remaining attempts to earn up to full credit at this time.
+ In-class Quizzes   These are low-stakes assessments that may help in reducing the testing anxiety
+                    for other assessments by giving you practice. Each covers 2-3 sections of the
+                    book.
+                    Makeup policy: There will not be any makeup quizzes administered. Instead,
+                    the lowest quiz grade will be dropped from the final grade.
+ Gateway Exam       Each exam contains 10 questions on taking derivatives.
+                    Full Pass score is 80% or higher and full points will be awarded.
+                    Partial Pass score is 70% and half points will be awarded.
+                    Any score below 70% is awarded zero points.
+                    A paper Gateway exam will be given during your lab in Week 8 (3/8 or 3/9).
+                    If you didn’t pass the paper Gateway, multiple computerized retakes will be
+                    available in Weeks 9-10 in Snow 159.
+ Midterm & Final    They are administered in the evening.
+ Exams              There will be additional review sessions and practice exams available.
+
+
+
+
+                                                 6
+3      Math 125 Resources Outside the Classroom
+3.1     Math Help Room
+Every instructor and graduate teaching assistant is available for help outside the classroom, as listed
+above. The Math Help Room is in Snow 651 and is staffed by mathematics graduate teaching assistants.
+ Before searching for a private tutor , be sure to visit either your instructor or the Mathematics Help
+Room as they are free for KU students. The schedule for the Help Room will be posted on Canvas in the
+second week of classes; it will be open in the afternoons.
+
+3.2     Supplemental Instruction (SI)
+Supplemental Instruction, or SI, is available for this class. SI Leaders are students who have previously
+taken this class and now, as SI Leaders, they attend the class lectures and lead engaging and activity-
+based study sessions to review course material outside of the classroom. The sessions are free, voluntary,
+provide an opportunity for students to meet other students in class, discuss important concepts, and
+develop effective study strategies. Data has shown that students who regularly attend and actively
+participate in SI Sessions have the potential to do well on exams and receive strong overall grades in their
+course. Specific information about SI for this course including the days, times, campus locations of the SI
+Sessions be announced the second week of classes and from there will be posted on our course Canvas page.
+For more information about SI, visit the Academic Learning Center website at http://learning.ku.edu
+and click on Supplemental Instruction from the main menu. The SI Leaders for MATH 125 this semester
+are Beth, Emina, and Shayeera.
+
+3.3
+                      KU Mathematics
+        Group Work and Tutors
+Students may discuss homework/worksheet problems in groups, but each student is responsible for doing
+their own work and for turning in individual solutions. When a student works with a tutor, it is the
+responsibility of both the student and the tutor to ensure that it is the student who works to arrive at the
+solution of the problems. Tutors should not do student homework or provide solutions for assignments.
+Members of the class are encouraged to study together, but EACH must write out their own solutions
+to the assigned problems. Copying of another person’s homework is not allowed. Homework is a major
+part of the learning process in mathematics. It is essential that you work on problems on your own and
+do the homework on a regular basis.
+
+
+4      Course Content
+4.1     Prerequisites
+MATH 103 or MATH 104, with a grade of C- or higher; or 3 years of college preparatory mathematics
+including trigonometry, with a score of 28 or higher on the ACT Mathematics exam.
+
+4.2     Learning Objectives and Course Content
+The course covers differential calculus and the basics of integral calculus, covering most of Chapters 2-5
+of the text. The precise sections to be covered are listed in the schedule given on Canvas. The objective
+of the course is to acquire mastery of the material covered in the course in the following senses:
+    1. Mathematical understanding, as demonstrated by the ability to solve appropriate mathematical
+       problems.
+
+                                                     7
+  2. Practical understanding, as demonstrated by the ability to solve appropriate word problems in the
+     sciences, in engineering and in the social sciences.
+
+4.3    Course Goals and Topics
+By the end of Math 125, students should have begun to build fundamental knowledge and skills so they
+can apply calculus to future STEM academic training and professional practice. Fundamental calculus
+knowledge and skills will be learned and evaluated based on specific objectives related to:
+      Limits
+
+        – Have an intuitive understanding of the definition of a limit.
+        – Evaluate limits (two-sided, left, and right) of a piecewise defined function given algebraically
+          or graphically.
+        – Calculate infinite limits and detect vertical asymptotes.
+        – Detect when a function is continuous and identify the type of discontinuity.
+        – Apply the Intermediate Value Theorem to mathematically prove two functions intersect on a
+          particular interval.
+
+      Derivatives
+
+        – Apply limits to calculate the slope of a tangent line or an instantaneous velocity.
+        – Understand how the first and second derivative affect the shape of a functions graph.
+
+
+                      KU Mathematics
+        – Compare the different differentiation formulas and recognize when to use each.
+        – Understand the connection between implicit differentiation and the chain rule.
+        – Find the slopes of implicitly defined functions.
+        – Apply implicit differentiation and the chain rule to solve many types of related rates problems.
+        – Apply L’Hôspital’s Rule to calculate limits of various indeterminate forms.
+        – Calculate the derivative of any elementary function.
+        – Recognize when to apply logarithmic differentiation.
+        – Use the tangent line or differentials to estimate how a function is changing around a specific
+          point.
+        – Use the Closed Interval Method to identify absolute maxima and minima of a function.
+        – State the Mean Value Theorem and intervals for which a function satisfies it.
+        – Identify local extrema using either the First or Second Derivative Tests.
+        – Summarize all your current algebra and calculus knowledge to sketch an accurate graph of a
+          function.
+        – Apply your maxima/minima knowledge to solve optimization problems.
+        – Recognize how and why Newton’s Method can approximate the roots of differentiable func-
+          tions.
+
+      Integrals
+
+        – Compute general antiderivatives for select elementary functions.
+        – Solve initial value problems for using antiderivatives.
+
+                                                    8
+        – Use antiderivatives to calculate velocity or position from acceleration.
+        – Estimate the area under a curve using rectangles with heights given by left, right, or midpoints.
+        – Identify how the definite integral relates to area under the curve.
+        – Manipulate integral expressions using the basic properties of the integral.
+        – Relate slopes and areas through the Fundamental Theorem of Calculus.
+        – Develop a substitution rule to find antiderivatives of more complicated functions.
+
+4.4    Keys to Success in Math 125
+   • Join your lecture and your laboratory section prepared to learn and engage with the material!
+     Watch the videos (as available) if you need help.
+
+   • After each class, review the material and do the assigned work and suggested homework in the
+     textbook.
+
+   • Prepare for the next class meeting:
+
+        – Visit Canvas to check the schedule and announcements.
+        – Print the pre-lecture notes and the lab worksheets at the beginning of each week.
+        – Read the upcoming section in the textbook.
+
+   • Find help! Take advantage of both your lecturer’s and your laboratory instructor’s office hours.
+     Visit the Math Help Room. Attend SI sessions. The help room schedule and the SI schedule can
+
+                      KU Mathematics
+     be found on the course Canvas page.
+
+   • Study! Gather a group of friends and regularly work and study together using the Help Room or
+     your Lab Teams.
+
+   • You will need a good background in algebra, and trigonometry. Chapter 1 can serve as an excellent
+     reference for reviewing prerequisite material and doing practice problems.
+
+4.5    General Comments on Study Habits
+Regular class attendance is important for success in this course. Even if you’ve taken a previous
+Calculus course, this course is likely to be taught from a more sophisticated perspective, and if you think
+this class will be review, you are probably mistaken. You should expect to spend at least two hours
+studying outside of class for every hour spent in class; this includes your homework time. In contrast
+to most high school math classes, if you don’t understand the topics being covered, you should NOT
+assume that your instructor will repeat material until you understand or master it. Ideally, you should
+ask questions at the time in class. Of course, you will also need to spend time thinking things through on
+your own, but if you’ve tried that and are still confused, make use of the Math Help Room (Snow 651)
+and instructor office hours. Don’t wait! Mathematics is cumulative, so anything you don’t understand
+now is likely to keep giving you trouble as the semester goes on. That said, mathematics does take time
+to learn and your assignments are staggered to generally give you at least a week to learn specific skills.
+
+
+
+
+                                                    9
+5     Additional KU Policies
+5.1     Diversity and Inclusion
+All students are welcome in this course, regardless of age, ability, background, belief, ethnicity, gender,
+gender identity, gender expression, religious affiliation, sexual orientation, and socioeconomic status. In-
+structors and students are both expected to contribute positively to an environment that respects the iden-
+tities of others and welcomes diversity. If you are experiencing discrimination and/or harassment, please
+consider reaching out to any of your specific instructors or to the course coordinator (thudgins@ku.edu).
+If your instructor or coordinator is causing you harm and you do not feel comfortable approaching the
+individual, there are additional resources on campus to support you, such as:
+
+    • Office of Diversity, Equity, Inclusion, and Belonging
+
+    • Center for Sexuality and Gender Diversity
+
+    • Office of Civil Rights and Title IX
+
+5.2     Policy on Students with Special Needs
+The KU Office of Student Access Services (SAC) coordinates accommodations and services for all eligible
+students with disabilities. If you have a disability and wish to request accommodations, you should
+contacted SAC as soon as possible (22 Strong Hall; 785-864-4064 ; http://access.ku.edu/). We also
+recommend that you contact your instructor and graduate teaching assistant privately in regard to your
+needs in this course.
+
+5.3                    KU Mathematics
+        Religious Holidays
+Any student in this course who plans to observe a religious holiday which conflicts in any way with the
+course schedule or requirements should complete the relevant forms at https://diversity.ku.edu/religious-
+observances with the Office of Diversity, Equity, Inclusion & Belonging and contact the course coordinator
+(Dr. Hudgins, thudgins@ku.edu) before the end of the third week of classes to discuss alternative
+accommodations.
+
+5.4     Excused Absences and Making Up Missed Work
+Students with a conflict with another course or verifiable excuse, temporary orders necessitating the
+absence of those in the US Armed Forces, sanctioned university activities, or a medical crisis of themselves,
+a relative, or friend may be excused from being present. It is the responsibility of the student to initiate
+discussion with their instructor or graduate teaching assistant prior to the absence examination/test if
+possible. Students can formally request their exam to be rescheduled due to a conflict by completing an
+Exam Conflict form which will be shared approximately a week before the exam is scheduled.
+
+5.5     Policy on Academic Misconduct
+You are required to abide by all KU policies on academic integrity. Cheating, plagiarism or other academic
+misconduct will result in a failing grade on the assignment in question, notification of the student’s
+dean, and usually further disciplinary sanctions, possibly including a failing grade in the course. You are
+encouraged to collaborate with other students on the homework assignments. However, each student must
+write up his or her own solutions and acknowledge all collaborators. Copying someone else’s homework,
+
+
+                                                     10
+or allowing someone else to copy yours, is considered to be a form of cheating. For more information, see
+KU’s official policies on academic misconduct at http://policy.ku.edu/governance/USRR#art2sect6.
+
+5.6    Intellectual Property
+   • Course materials prepared by the instructor, together with the content of all lectures and review
+     sessions presented by the instructor are the property of the instructor.
+
+   • Video and audio recording of lectures and review sessions without the consent of the instructor is
+     prohibited.
+
+   • Permission to make such recordings may be granted by the instructor on a case-by-case basis, on
+     the condition that the individual making the recording uses these recordings only as a study aid.
+
+   • Unless explicit permission is obtained from the instructor, recordings of lectures and review sessions
+     and course content may not be modified and must not be transferred or transmitted to any other
+     person, whether or not that individual is enrolled in the course.
+
+5.7    Commercial Note Taking
+Pursuant to the University of Kansas’ Policy on Commercial Note-Taking Ventures, commercial note-
+taking is not permitted in Math 125. Lecture notes and course materials may be taken for personal use
+or for the purpose of mastering the course material, and may not be sold to any person or entity in any
+form. Any student engaged in or contributing to the commercial exchange of notes or course materials
+will be subject to discipline, including academic misconduct charges, in accordance with University policy.
+
+                      KU Mathematics
+Please note: note-taking provided by a student volunteer for a student with a disability, as a reasonable
+accommodation under the SAC, is not the same as commercial note-taking and is not covered under this
+policy.
+
+5.8    Policy on Mask Wearing
+Students are expected to comply with the most current University policy.
+
+5.9    KU Firearm Policy
+Individuals who choose to carry concealed handguns are solely responsible to do so in a safe and secure
+manner in strict conformity with state and federal laws and KU weapons policy. Safety measures outlined
+in the KU weapons policy specify that a concealed handgun:
+
+   • Must be under the constant control of the carrier.
+
+   • Must be out of view, concealed either on the body of the carrier, or backpack, purse, or bag that
+     remains under the carrier’s custody and control.
+
+   • Must be in a holster that covers the trigger area and secures any external hammer in an un-cocked
+     position
+
+   • Must have the safety on, and have no round in the chamber.
+
+
+
+
+                                                    11
+
