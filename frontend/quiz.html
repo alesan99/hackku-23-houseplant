@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quiz.css"/>
+        <script defer src="pyscript.js"></script>
+    </head>
+
+	<body>
+
+	<!--Quiz Questions-->
+	<h1 id="result">Taking Quiz...</h1><br>
+	<button type="button" id="button">Submit</button>
+
+	<!--Quiz logic in python-->
+	<py-config hidden>
+		[splashscreen]
+		autoclose = true
+		
+		[[fetch]]
+		files = ["./quiz.py", "./quiz.json"]
+	</py-config>
+	<py-script src="./main.py" hidden></py-script>
+
+	<script>
+
+	</script>
+
+	</body>
+</html>
