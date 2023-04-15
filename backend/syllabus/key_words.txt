@@ -1,0 +1,15 @@
+{
+	"contact_info": [
+		"professor"
+		"teaching assistant"
+		"ta"
+		"t.a."
+		"office hours"
+	],
+    
+	exam dates
+	major assignments
+	absences
+	withdrawal
+	textbook
+}

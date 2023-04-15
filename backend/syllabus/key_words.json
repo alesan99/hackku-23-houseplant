@@ -1,0 +1,33 @@
+{
+	"contact": [
+		"professor",
+		"teaching assistant",
+		"ta",
+		"t.a.",
+		"office hours"
+	],
+
+    "exam_dates": [
+		"exams"
+	],
+	
+	"major_assignments": [
+
+	],
+
+	"absences": [
+
+	],
+	
+	"withdrawal": [
+
+	],
+
+	"textbook": [
+
+	],
+	"late work": [
+		"Late Work"
+
+	]
+}

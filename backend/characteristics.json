@@ -1,0 +1,42 @@
+{
+	"impulse-hyper": [
+		"frequent fidgeting with hands or feet or squirming",
+		"difficulty staying seated",
+		"excessive running or climbing in children or extreme restlessness in adults",
+		"problems engaging in activities quietly",
+		"behaving as if driven by a motor",
+		"excessive talking",
+		"impatience or difficulty taking turns",
+		"frequently interrupting or intruding on others"
+	],
+	
+	"inattentive-distractable": [
+		"difficulty paying close attention to details, which can result in careless mistakes",
+		"difficulty maintaining attention",
+		"an apparent lack of listening",
+		"difficulty following through with instructions",
+		"trouble with organization",
+		"tendency to lose items",
+		"easy distraction",
+		"forgetfulness in daily activities"
+	],
+
+    "combined":[
+        "difficulty paying close attention to details, which can result in careless mistakes",
+		"difficulty maintaining attention",
+		"an apparent lack of listening",
+		"difficulty following through with instructions",
+		"trouble with organization",
+		"tendency to lose items",
+		"easy distraction",
+		"forgetfulness in daily activities",
+		"frequent fidgeting with hands or feet or squirming",
+		"difficulty staying seated",
+		"excessive running or climbing in children or extreme restlessness in adults",
+		"problems engaging in activities quietly",
+		"behaving as if driven by a motor",
+		"excessive talking",
+		"impatience or difficulty taking turns",
+		"frequently interrupting or intruding on others"
+    ]
+}
