@@ -6,9 +6,9 @@ from backend.characteristics import characteristicsList
 
 
 # Load Questions
-characteristics_list = characteristicsList('backend/characteristics.json')
+characteristics_list = characteristicsList('./backend/characteristics.json')
 categories = characteristics_list.categories
-quiz = Quiz("/quiz.json")
+quiz = Quiz("./quiz.json")
 
 def submitQuiz(placeholder):
 	for qi in range(len(quiz.questions)):
