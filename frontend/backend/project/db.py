@@ -1,5 +1,5 @@
 import sqlite3
-
+import json
 import click
 from flask import current_app, g
 
@@ -11,6 +11,9 @@ def init_db():
     db = get_db()
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
+    with open('quiz.json') as f:
+        
+
 
 def get_db():
     if 'db' not in g:
@@ -26,6 +29,7 @@ def get_db():
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
+
     click.echo('Initialized the database.')
 
 def close_db(e=None):
