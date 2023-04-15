@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" hidden/>
+<script defer src="./pyscript.js" hidden></script>
+
+<html>
+	<body>
+
+	<!--Quiz Questions-->
+	<h1 id="result">Taking Quiz...</h1><br>
+	<button type="button" id="button">Submit</button>
+
+	<!--Quiz logic in python-->
+	<py-config hidden>
+		[splashscreen]
+		autoclose = true
+		
+		[[fetch]]
+		files = ["./quiz.py", "./quiz.json"]
+	</py-config>
+	<py-script src="./main.py" hidden></py-script>
+
+	<script>
+
+	</script>
+
+	</body>
+</html>

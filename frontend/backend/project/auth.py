@@ -56,11 +56,15 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return redirect(url_for('auth.quiz'))
 
         flash(error)
 
     return render_template('auth/login.html')
+
+@bp.route('/quiz')
+def quiz():
+    return render_template('auth/index.html')
 
 @bp.before_app_request
 def load_logged_in_user():
