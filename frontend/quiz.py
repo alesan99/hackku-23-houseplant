@@ -1,4 +1,5 @@
 import json
+import os
 
 class Question:
     def __init__(self, data):
@@ -11,7 +12,8 @@ class Question:
 
 class Quiz:
     def __init__(self, json_path):
-        with open(json_path, 'r') as f:
+        wkdr = os.getcwd()
+        with open('./quiz.json', 'r') as f:
             self.data1 = json.load(f)
             self.data = self.data1["Quiz"]
 
@@ -28,19 +30,19 @@ class Quiz:
 
         self.finished = False
 
-    def getQuestion(self):
-        return self.questions[self.q]
+    def getQuestion(self, q):
+        return self.questions[q or self.q]
 
-    def getQuestionString(self):
-        return self.questions[self.q].question
+    def getQuestionString(self, q):
+        return self.questions[q or self.q].question
 
-    def giveAnswer(self, val):
-        q = self.getQuestion()
-        self.scores[q.category] += q.getScore(val)
-
-        if self.q >= len(self.questions)-1:
+    def giveAnswer(self, q, val):
+        if self.q >= len(self.questions):
             print("finished")
             self.finish()
+            return
+        q = self.getQuestion(q)
+        self.scores[q.category] += q.getScore(val)
 
     def nextQuestion(self):
         self.q += 1
@@ -54,14 +56,14 @@ class Quiz:
     def getResult(self):
         highest = 0
         for i in range(len(self.scores)):
-            if self.scores[i] > 0:
+            if self.scores[i] > self.scores[highest]:
                 highest = i
         return highest
 
 # Here is how to use it. 
-testquiz = Quiz("backend/quiz.json")
-while not testquiz.finished:
-    print(testquiz.getQuestionString()) # Get question string to display the actual question
-    testquiz.giveAnswer(int(input("1-5:")))
-    testquiz.nextQuestion() # Move onto the next question, repeat
-print(testquiz.getResult())
+# testquiz = Quiz("backend/quiz.json")
+# while not testquiz.finished:
+#    print(testquiz.getQuestionString()) # Get question string to display the actual question
+#    testquiz.giveAnswer(int(input("1-5:")))
+#    testquiz.nextQuestion() # Move onto the next question, repeat
+#print(testquiz.getResult())

@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-
 <link rel="stylesheet" href="styles.css" hidden/>
 <script defer src="pyscript.js" hidden></script>
 
 <html>
-<body>
+	<body>
 
+	<!--Quiz Questions-->
+	<h1 id="result">Taking Quiz...</h1><br>
+	<button type="button" id="button">Submit</button>
 
-<h1 id="result">Taking Quiz...</h1>
+	<!--Quiz logic in python-->
+	<py-config hidden>
+		[splashscreen]
+		autoclose = true
+		
+		[[fetch]]
+		files = ["./quiz.py", "./quiz.json"]
+	</py-config>
+	<py-script src="./main.py" hidden></py-script>
 
-<button type="button" id="button">Submit</button>
+	<script>
 
-<py-script hidden>
-	from js import document
-	from pyodide import create_proxy
-	def runPython(placeholder):
-		i = 1
-		document.getElementById("result").innerHTML = "Result: " + str(i)
-	function_proxy = create_proxy(runPython)
+	</script>
 
-	document.getElementById("button").addEventListener("click", function_proxy)
-</py-script>
-
-</body>
+	</body>
 </html>
-
-	<!--
-<h1 onclick="changeText(this)">Click on this text!</h1>
-
-
-<py-script output="out">
-	import "backend/quiz"
-	hello = "Hello world what"
-	print(hello)
-</py-script>
-
-<script>
-function changeText(id) {
-
-  id.innerHTML = "Ooops!";
-}
-</script>-->
