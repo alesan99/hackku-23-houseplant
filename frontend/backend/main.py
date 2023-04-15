@@ -2,17 +2,19 @@ import json
 from js import document
 from pyodide import ffi
 from backend.quiz import Quiz
+from backend.characteristics import characteristicsList
 
-categories = ["Inattentive-Distractable", "Impulse-Hyper", "Combined"]
 
 # Load Questions
-testquiz = Quiz("/quiz.json")
+characteristics_list = characteristicsList('backend/characteristics.json')
+categories = characteristics_list.categories
+quiz = Quiz("/quiz.json")
 
 def submitQuiz(placeholder):
-	for qi in range(len(testquiz.questions)):
+	for qi in range(len(quiz.questions)):
 		score = document.querySelector(f'input[name="answers{qi}"]:checked').value
-		testquiz.giveAnswer(int(qi), int(score))
-	result = testquiz.getResult()
+		quiz.giveAnswer(int(qi), int(score))
+	result = quiz.getResult()
 	document.getElementById("result").innerHTML = "Result: " + categories[result]
 
 document.getElementById("button").addEventListener("click", ffi.create_proxy(submitQuiz))
@@ -27,15 +29,15 @@ def createScale(name, qi, checked):
 	radioFragment = document.createElement('div')
 	radioFragment.innerHTML = radioHtml
 
-	currentDiv = document.getElementById("result")
+	currentDiv = document.getElementById("insert-questions-here")
 	document.body.insertBefore(radioFragment, currentDiv.nextSibling)
 
 	
 # Interaction with HTML
-for qi in range(len(testquiz.questions)):
+for qi in range(len(quiz.questions)):
 	newDiv = document.createElement("div")
-	newDiv.innerHTML = f'<p id="question{qi}">{testquiz.getQuestionString(qi)}</p>'
-	currentDiv = document.getElementById("result")
+	newDiv.innerHTML = f'<p id="question{qi}">{quiz.getQuestionString(qi)}</p>'
+	currentDiv = document.getElementById("insert-questions-here")
 	createScale(f'answers{qi}', qi, False)
 	document.body.insertBefore(newDiv, currentDiv.nextSibling)
 

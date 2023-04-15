@@ -6,7 +6,8 @@
 	<body>
 
 	<!--Quiz Questions-->
-	<h1 id="result">Taking Quiz...</h1><br>
+	<h1 id="result">Taking Quiz...</h1><br> <!--Result of the Quiz will be sent here-->
+	<h1 id="insert-questions-here" hidden>Taking Quiz...</h1><br> <!--Questions and Answers will be sent here-->
 	<button type="button" id="button">Submit</button>
 
 	<!--Quiz logic in python-->
@@ -15,7 +16,7 @@
 		autoclose = true
 		
 		[[fetch]]
-		files = ["./backend/quiz.py", "./backend/quiz.json"]
+		files = ["./backend/quiz.py", "./backend/quiz.json", "./backend/characteristics.py", "./backend/characteristics.json"]
 	</py-config>
 	<py-script src="./backend/main.py" hidden></py-script>
 
