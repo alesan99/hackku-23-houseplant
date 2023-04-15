@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Quiz{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+{%for line in questions%}
+  <p>{{line.Question}}</p>
+
+{% endfor %}
+
+{% endblock %}
