@@ -1,7 +1,7 @@
 import json
 from js import document
 from pyodide import ffi
-from quiz import Quiz
+from backend.quiz import Quiz
 
 categories = ["Inattentive-Distractable", "Impulse-Hyper", "Combined"]
 

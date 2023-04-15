@@ -13,7 +13,7 @@ class Question:
 class Quiz:
     def __init__(self, json_path):
         wkdr = os.getcwd()
-        with open('./quiz.json', 'r') as f:
+        with open('./backend/quiz.json', 'r') as f:
             self.data1 = json.load(f)
             self.data = self.data1["Quiz"]
 
