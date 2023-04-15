@@ -1,18 +1,43 @@
-
-
-<!--Feel free to delete literally all of this below if you want vvvv-->
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="styles.css" />
-<script defer src="pyscript.js"></script>
+<link rel="stylesheet" href="styles.css" hidden/>
+<script defer src="pyscript.js" hidden></script>
 
 <html>
 <body>
 
-<py-script output="out">
-	hello = "Hello world what"
-	print(hello)
+
+<h1 id="result">Taking Quiz...</h1>
+
+<button type="button" id="button">Submit</button>
+
+<py-script hidden>
+	from js import document
+	from pyodide import create_proxy
+	def runPython(placeholder):
+		i = 1
+		document.getElementById("result").innerHTML = "Result: " + str(i)
+	function_proxy = create_proxy(runPython)
+
+	document.getElementById("button").addEventListener("click", function_proxy)
 </py-script>
 
 </body>
 </html>
+
+	<!--
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+
+<py-script output="out">
+	import "backend/quiz"
+	hello = "Hello world what"
+	print(hello)
+</py-script>
+
+<script>
+function changeText(id) {
+
+  id.innerHTML = "Ooops!";
+}
+</script>-->
