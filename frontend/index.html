@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADHD Key</title>
-    <link rel="stylesheet" href="/frontend/backend/project/static/styles.css">
+    <link rel="stylesheet" href="sylstyles.css">
     <link rel="icon" href="https://tinypic.host/i/akicon.o086mD" 
     type="image/x-icon">
 </head>
@@ -12,15 +12,12 @@
 <header>
     <nav>
         <div class="left-links">
-            <a href="index.html" id="home"><img src="/frontend/images/akicon.jpg"></a>
-            <a href="#" id="">Resources</a>
+            <a href="index.html" id="home"><img src="https://tinypic.host/images/2023/04/16/akicon.png" alt="akicon.png" border="0" /></a></a>
         </div>
         <div class="right-links">
-            <a href="#" id="sign">Sign In</a>
-            <a href="#" id="account-logo"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fkey_263069&psig=AOvVaw16uk2kfttyygHfVZHAWB3A&ust=1681698441485000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOjjwYOtrf4CFQAAAAAdAAAAABA5"></a>
+            <a href="#" id="account-logo"><img src="https://tinypic.host/images/2023/04/16/loginicon.png"></a>
         </div>
       </nav>
-      
 </header>  
 <body>
 <div class="content">
@@ -91,8 +88,19 @@
     <h2>ADHD Key Resources</h2>
         <body>
         <div class="row">
-          <div class="column">
-            <input type="text" placeholder="Write here..." name="text" class="input">
+            <div class="input__container input__container--variant">
+                <div class="shadow__input shadow__input--variant"></div>
+                <form method="get" action="http://www.google.com/search">
+                    <input type="text" name="text" class="input__search input__search--variant" 
+                    placeholder="Search for resources!" size="31" maxlength="255" value="">
+                    <button class="input__button__shadow input__button__shadow--variant">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="1.5em" width="1.5em">
+                        <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#FFF"></path>
+                      </svg>
+                </form>
+                </button>
+              </div>
+
             <!--<form method="get" action="http://www.google.com/search">
                 <input type="text"   name="q" size="31"
                 maxlength="255" value=""/>
