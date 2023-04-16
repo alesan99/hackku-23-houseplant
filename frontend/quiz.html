@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="/frontend/backend/project/static/styles.css">
+<link rel="stylesheet" href="./backend/project/static/styles.css">
 <script defer src="pyscript.js" hidden></script>
 
 <html>
@@ -17,13 +17,16 @@
 	</header>
 	<body>
 
+		
+	<h1 id="insert-questions-here" hidden>Taking Quiz...</h1><br> <!--Questions and Answers will be sent here-->
+	<h1 id="result"></h1><br> <!--Questions and Answers will be sent here-->
 	<!--Quiz Questions-->
 	<div class="container">
 		<div id="heading">
 			<h1 id="key">ADHD Key</h1>
 			<h1 id="type">Type Test</h1>
 		</div>
-		<div class="quizform">
+		<div class="quizform" id="inserted">
 			<!-- duplicate question classes for new quesitons -->
 		  <div class="question">
 			<p>Do you have trouble with homework?</p>
@@ -38,11 +41,23 @@
 			</div>
 		  </div>
 		  <br>
+		  <div id="inserted"></div>
 		  
 		  <div id="button">
-		  		<input type="submit" value="Submit" id="submit">
+		  		<a href="index.html"><input type="submit" value="Submit" id="submit"></a>
 			</div>
 		</div>
+
+		
+		<!--Quiz logic in python-->
+		<py-config hidden>
+			[splashscreen]
+			autoclose = true
+			
+			[[fetch]]
+			files = ["./backend/quiz.py", "./backend/quiz.json", "./backend/characteristics.py", "./backend/characteristics.json"]
+		</py-config>
+		<py-script src="./backend/main.py" hidden></py-script>
 	  </div>
 
 	</body>
