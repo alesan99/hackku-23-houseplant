@@ -44,9 +44,14 @@ class extractor:
 				print(important1, important2)
 
 				if space1 != -1 and space2 != -1 and space1 != space2 and ((abs(important1-cursor) < tolerance) or (abs(important2-cursor) < tolerance)):
-					dist1 = 
-					closestkeyword = 
-					self.data.append(["Midterm Day", s[space1:space2+1]])
+					dist1 = abs(important1-cursor)
+					dist2 = abs(important2-cursor)
+					closestkeyword = "Important Date"
+					if dist1 < dist2:
+						closestkeyword = keyword1
+					else:
+						closestkeyword = keyword2
+					self.data.append([closestkeyword, s[space1:space2+1]])
 					# print("found at ", cursor)
 		# self.data = [["midterm time", "1/7"]]
 		# print("done!")
