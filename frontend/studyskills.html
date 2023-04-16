@@ -40,14 +40,15 @@
                 <div class="row">
                     <div class="column">
                         <h1>StudySkill</h1>
-                        <p>This is the StudySkill planner. Description here please, thanks future me! </br>
-                            Blahjksdgfjhv sdjvhbh sjhchcvbmc jgasjd, ashdfjhd. kasjhdhj. kjs. <br>
+                        <p>The Study Skill Plan will create a personalized list of recommendations
+                            and tips for you, catered to your specific needs and struggles in studying. <br>
                         </p>
+                        <h4>Instructions</h4>
                         <p>
-                            1. Select jahgsdjhfg <br>
-                            2. Do taeyjfgshd <br>
-                            3. Blahjdfsdjfbv <br>
-                            4. Relish. <br>
+                            1. Select the issues you struggle with. <br>
+                            2. Hit the "Submit" button. <br>
+                            3. To save your plan, click "Save to Account". To start over, click "Reset". <br>
+                            4. Enjoy your personalized study skill plan! <br>
                         </p>
                     </div>
                     <div class="column">
@@ -57,21 +58,33 @@
                                 border-collapse: collapse;
                             }
                         </style>
+                        <!--this table will have 9 options for people to check. when toggled, we need to
+                        collect that input and output all the solutions in the personalized plan area-->
                         <table style="width:100%" height="100%">
                             <tr height="200px">
-                                <th width="33.3%">Issue 1<th>
-                                <th width="33.3%">Issue 2<th>
-                                <th width="33.4%">Issue 3<th>
+                                <th width="33.3%">Poor Time Management<th>
+                                <!--solution: To improve your time management skills, try using an
+                                organization app like Notion and setting multiple reminders on your phone! -->
+                                <th width="33.3%">Trouble Focusing in Class<th>
+                                <!--solution: To focus in class, try using-->
+                                <th width="33.4%">Doesn't do homework<th>
+                                <!--solution: -->
                             </tr>
                             <tr height="200px">
-                                <th>Issue 4<th>
-                                <th>Issue 5<th>
-                                <th>Issue 6<th>
+                                <th>Difficulty balancing work, school, and social lives<th>
+                                <!--solution: -->
+                                <th>Racing thoughts<th>
+                                <!--solution: -->
+                                <th>Easily bored<th>
+                                <!--solution: -->
                             </tr>
                             <tr height="200px">
-                                <th>Issue 7<th>
-                                <th>Issue 8<th>
-                                <th>Issue 9<th>
+                                <th>Always running late<th>
+                                <!--solution: -->
+                                <th>Difficulty planning<th>
+                                <!--solution: -->
+                                <th>Lack of motivation<th>
+                                <!--solution: -->
                             </tr>
                         </table>
                         <button onclick="window.location.href='#personalizedplan';">SUBMIT</button>
@@ -88,7 +101,7 @@
         </style>
         <table style="width:100%">
             <tr height="500px">
-                <th>Personalized Plan Output Here<th>
+                <th>Personalized Plan Here<th>
             </tr>
         </table>
         <!--these buttons need to be able to 1) save the personalized plan to the users account,

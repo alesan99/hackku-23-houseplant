@@ -37,14 +37,16 @@
             <div class="column">
             <!-- description and PDF upload -->
             <h1>SyllabiScan</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Mauris augue neque gravida in fermentum et sollicitudin ac. Odio eu 
-                feugiat pretium nibh ipsum consequat nisl vel pretium.
+            <p> The ADHD Key SyllabiScan will scan your syllabus for important assignment 
+                and exam dates and deliver that information to you in an easy-to read format 
+                so you don't have to comb through 50 pages of a syllabus!
             </p>
-            <p>Click the "Choose File" button to upload your Syllabus </br>
-                and click Submit for your Syllabus information. </br>
-                <em>Please note that only PDFs are supported.</em></p>
+            <h4>Instructions</h4>
+            <p>1. Click the "Choose File" button to upload your Syllabus </br>
+                2. Select your file </br>
+                3. Click "Submit". </br>
+                4. Enjoy your Syllabus Scan!</br>
+                <em>Please note that only .TXTs are supported.</em></p>  <!-- should be PDF, TXT for now until converions gets handled -->
                 <form action="/action_page.php">
                     <!-- <input type="file" id="myFile" name="syllabus" accept="application/pdf"> -->
                     <!-- <input type="submit"> -->
@@ -92,30 +94,30 @@
                         Where I have written the variables of [hall ###], (day of week, date) 
                         and etc. is where the output needs to go for each respective value :) -->
                     <table>
-                    <tr>
+					<div id="important_dates"></div>
+                    <!--<tr>
                         <th>Location</th>
                         <th>Date</th>
                         <th>Time</th>
                     </tr>
                     <tr>
-                        <td>[hall ###]</td>
-                        <td>(day of week, date)</td>
-                        <td>(starttime-endtime)</td>
-                    </tr>
-                    <tr>
-                        <td>[hall ###]</td>
-                        <td id="insert5">(day of week, date)</td>
-						id="exam1date"
-                        <td>(starttime-endtime)</td>
+                        <td id="location1">[hall ###]</td>
+                        <td id="date1">(day of week, date)</td>
+                        <td id="time1">(starttime-endtime)</td>
                     </tr>
                     <tr>
                         <td>[hall ###]</td>
                         <td>(day of week, date)</td>
                         <td>(starttime-endtime)</td>
                     </tr>
-                    </table>
+                    <tr>
+                        <td>[hall ###]</td>
+                        <td>(day of week, date)</td>
+                        <td>(starttime-endtime)</td>
+                    </tr>
+                    </table>-->
                     <!-- same as above, but with a name, brief description, and due dates/times. -->
-                    <h2>MAJOR ASSIGNMENTS</h2>
+                    <!-- <h2>MAJOR ASSIGNMENTS</h2>
                     <table>
                     <tr>
                         <th>Name</th>
@@ -141,7 +143,7 @@
                         <td>(due date)</td>
                         <td>(due time)</td>
                     </tr>
-                    </table>
+                    </table>-->
                 </body>
             </div>
         </body>
