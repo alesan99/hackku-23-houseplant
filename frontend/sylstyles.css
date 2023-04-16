@@ -94,6 +94,7 @@ button {
     align-items: center;
     justify-content: space-between;
   }
+  
 #home, #sign-in{
   margin-top: 3vh;
 }
