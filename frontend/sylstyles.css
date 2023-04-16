@@ -65,10 +65,13 @@ h2 {        /* instructions header*/
     -webkit-background-clip: text;
 }
 
-h3 {        /* exam info header*/
+h3 {        /* assignment info header*/
     font-family: "Poppins";
     font-size: 7vh;
-    color: #89023e;
+    background-image: linear-gradient(to bottom, #ea638c, #89023e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 p {         /* description, instructions*/
@@ -76,3 +79,32 @@ p {         /* description, instructions*/
     font-size: 3vh;
     color: #1b2021;
 }
+
+button {
+    background-color: #89023e;
+    border: none;
+    font-family: "Poppins";
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #ffd9da;
+    box-shadow: 0 0.4rem #61022d;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background: #a90f54;
+    color: white;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
