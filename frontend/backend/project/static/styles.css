@@ -12,7 +12,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fffbf5;
+  background-color: #89023e;
   height: 9vh;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ nav {
 
 nav a {
   display: block;
-  color: #89023e;
+  color: #fffbf5;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 600;
@@ -98,6 +98,7 @@ input[type="radio"] {
     align-items: center;
     justify-content: center;
     margin-top: -.25em;
+    margin-left: 2em;
 }
 /* big radios */
 #radio1, #radio5{

@@ -2,7 +2,51 @@
 	"__": "PS: Questions are placeholders",
 	"Quiz": [
 		{
-			"Question": "Do you have trouble with organization?",
+			"Question": "Do you frequently figet with your hands/feet?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have difficulty maintaining attention?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have difficulty staying seated?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you feel extreme reslessness?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have a tendnecy to lose items?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have difficulty engaging in activities quietly?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you feel a need to talk continually?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you find yourself interrupting others?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble paying close attention to details?",
+			"Category": 1
+		},
+		{
+			"Question": "Do people frequently think you are not listening?",
+			"Category": 1
+		},
+		{
+			"Question": "Did you run or climb excessively as a child?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have difficulty following through with instructions?",
 			"Category": 1
 		},
 		{
@@ -10,63 +54,19 @@
 			"Category": 1
 		},
 		{
-			"Question": "Do you have trouble with organization?",
+			"Question": "Do you find yourself easy to distract?",
 			"Category": 1
 		},
 		{
-			"Question": "Do you have trouble with organization?",
+			"Question": "Do you feel impatience awaiting your turn?",
+			"Category": 0
+		},
+		{
+			"Question": "Do have forgetfulness in daily activities?",
 			"Category": 1
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 1
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 1
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 1
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 1
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
-		},
-		{
-			"Question": "Are you easily distracted?",
-			"Category": 0
-		},
-		{
-			"Question": "Difficulty staying seated?",
-			"Category": 0
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
-		},
-		{
-			"Question": "Do you have trouble with organization?",
-			"Category": 0
 		}
 	],
 	"Categories": [
-		
+
 	]
 }
