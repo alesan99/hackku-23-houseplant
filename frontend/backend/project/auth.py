@@ -146,7 +146,7 @@ def logout():
     session.clear()
     return redirect(url_for('home'))
 @login_required
-@bp.route('/results', methods=('GET','PORT'))
+@bp.route('/results')
 def results():
     cats = [0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,1]
     db = get_db()

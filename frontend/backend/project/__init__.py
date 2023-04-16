@@ -27,7 +27,7 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/')
     def home():
-        return render_template("home/landing.html")
+        return render_template("home/index.html")
     
     @app.route('/registerlogin')
     def to_auth_login():
