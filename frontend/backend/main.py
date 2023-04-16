@@ -1,5 +1,5 @@
 import json
-from js import document
+from js import document, alert, window
 from pyodide import ffi
 from backend.quiz import Quiz
 from backend.characteristics import characteristicsList
@@ -12,34 +12,47 @@ quiz = Quiz("./quiz.json")
 
 def submitQuiz(placeholder):
 	for qi in range(len(quiz.questions)):
-		score = document.querySelector(f'input[name="answers{qi}"]:checked').value
+		score = 0
+		select = document.querySelector(f'input[name="answers{qi}"]:checked')
+		if select:
+			score = select.value
 		quiz.giveAnswer(int(qi), int(score))
 	result = quiz.getResult()
 	document.getElementById("result").innerHTML = "Result: " + categories[result]
+	alert("Result: " + categories[result].capitalize())
+	window.location.replace("./results.html")
 
-document.getElementById("button").addEventListener("click", ffi.create_proxy(submitQuiz))
 
 def createScale(name, qi, checked):
-	radioHtml = ''
+	radioHtml = f'<div class="question"><p>{quiz.getQuestionString(qi)}</p><div class="radios"><p>agree</p>'
 	for i in range(0,5):
-		radioHtml += f'<input type="radio" id="q{qi}answer{i}" name="{name}" value="{i+1}"'
+		radioHtml += f'<input type="radio" id="radio{i+1}" name="{name}" value="{i+1}"'
 		if checked:
 			radioHtml += ' checked="checked"'
 		radioHtml += '/>'
-	radioFragment = document.createElement('div')
-	radioFragment.innerHTML = radioHtml
+	radioHtml += '<p>disagree</p></div>'
+	return radioHtml
+	# radioFragment = document.createElement('div')
+	# radioFragment.innerHTML = radioHtml
 
-	currentDiv = document.getElementById("insert-questions-here")
-	document.body.insertBefore(radioFragment, currentDiv.nextSibling)
+	# currentDiv = document.getElementById("inserted")
+	# currentDiv.innerHTML = radioHtml
 
 	
 # Interaction with HTML
+addHtml = '<div class="quizform">'
 for qi in range(len(quiz.questions)):
 	newDiv = document.createElement("div")
 	newDiv.innerHTML = f'<p id="question{qi}">{quiz.getQuestionString(qi)}</p>'
 	currentDiv = document.getElementById("insert-questions-here")
-	createScale(f'answers{qi}', qi, False)
-	document.body.insertBefore(newDiv, currentDiv.nextSibling)
+	addHtml += createScale(f'answers{qi}', qi, False)
+	# document.body.insertBefore(newDiv, currentDiv.nextSibling)
+addHtml += '</div><div id="button"><input type="submit" value="Submit" id="submit"></div></div>'
+currentDiv = document.getElementById("inserted")
+currentDiv.innerHTML = addHtml
+
+# document.getElementById("submit").addEventListener("click", ffi.create_proxy(submitQuiz))
+document.getElementById("button").addEventListener("click", ffi.create_proxy(submitQuiz))
 
 # def addElement(placeholder):
 	# create a new div element
