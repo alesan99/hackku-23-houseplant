@@ -1,19 +1,18 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>User_Auth</h1>
-  <ul>
-    {% if g.user %}
-      <li><span>{{ g.user['username'] }}</span>
-      <li><a href="{{ url_for('home') }}">Home</a>
-      <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
-    {% else %}
-      <li><a href="{{ url_for('auth.register') }}">Register</a>
-      <li><a href="{{ url_for('auth.login') }}">Log In</a>
-    {% endif %}
-  </ul>
-</nav>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <nav> 
+    <ul id ="nav">
+      {% if g.user %}
+        <li>{{ g.user['username'] }}</li>
+        <li id="nav-Home"><a href="{{ url_for('home') }}">Home</a></li>
+        <li id="nav-Log-Out"><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+      {% else %}
+        <li id="nav-Register"><a href="{{ url_for('auth.register') }}">Register</a></li>
+        <li id="nav-Log-In"><a href="{{ url_for('auth.login') }}">Log In</a></li>
+      {% endif %}
+    </ul>
+  </nav>
 <section class="content">
   <header>
     {% block header %}{% endblock %}
