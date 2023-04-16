@@ -89,12 +89,40 @@ def quiz():
             db = get_db()
             error = None
             user = db.execute(
-                'SELECT * FROM quiz WHERE user_id = ?', (id,)
+                'DELETE FROM quiz WHERE user_id = ?', (id,)
             ).fetchall()
-            user_count = len(user)
-            if user_count< 3:
-                error = 'Please check all answers.'
-            flash(error)
+            for y in range(3):
+                b = "q"+str(y)
+                x = float(request.form[b])
+                for i in range(6):
+                    if i == x and i==1:
+                        x = (x*0)
+                    if i == x and i==2:
+                        x = (x*.25)
+                    if i == x and i==3:
+                        x= (x*.50)
+                    if i == x and i==4:
+                        x==x*.75
+                    if i == x and i==5:
+                        x=x*1
+                quiz_answer = x
+                try:
+                    db.execute(
+                    "INSERT INTO quiz (qustion_answer,user_id) VALUES (?, ?)",
+                    (quiz_answer,id),
+                    )
+                    db.commit()
+                except db.IntegrityError:
+                    error = "INTERROR"
+            
+            
+            '''if user_count< 2:
+                error = 'Please check all answers.'''
+            
+            if error is not None:
+                flash(error)
+
+            return redirect(url_for('home'))
         return render_template('auth/quiz.html', user = user,questions = var["Quiz"])
 
 
@@ -116,3 +144,16 @@ def logout():
     session.clear()
     return redirect(url_for('home'))
 
+@bp.route('/results')
+def results():
+    with open("./project/templates/auth/quiz.json") as f:
+        var = json.load(f)
+        db=get_db()
+        id = session['user_id']
+        user_type = db.execute(
+            'SELECT id FROM user WHERE user_id = ?', (id,)
+            ).fetchall()
+        question = var[Quiz]
+        if question[catergory]
+
+    return

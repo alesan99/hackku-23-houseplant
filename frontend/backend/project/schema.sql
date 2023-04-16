@@ -19,7 +19,7 @@ CREATE TABLE post (
 
 CREATE TABLE quiz (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  quiz_answer INTEGER NOT NUll,
+  qustion_answer INTEGER NOT NUll,
   user_id INTEGER NOT NULL,
   FOREIGN KEY(user_id) REFERENCES user(id)
 )

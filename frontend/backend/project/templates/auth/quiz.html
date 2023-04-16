@@ -1,13 +1,28 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Quiz{% endblock %}</h1>
+  <h1>{% block title %}ADHD Key Type Test{% endblock %}</h1>
 {% endblock %}
 
+
 {% block content %}
+<form method="post">
 {%for line in questions%}
-  <p>{{line.Question}}</p>
+  <div>
+    <p>{{line.Question}}</p>
+    <p>{{line.Category}}</p>
+    <div>
+        <input type="radio" name="q{{loop.index0}}" id="radio1" value="1">
+        <input type="radio" name="q{{loop.index0}}" id="radio2" value="2">
+        <input type="radio" name="q{{loop.index0}}" id="radio3" value="3">
+        <input type="radio" name="q{{loop.index0}}" id="radio4" value="4">
+        <input type="radio" name="q{{loop.index0}}" id="radio5" value="5">
+    </div>
+  </div>
 
 {% endfor %}
-
+<div id="button">
+		  		<input type="submit" value="Submit" id="submit">
+			</div>
+</form>
 {% endblock %}
