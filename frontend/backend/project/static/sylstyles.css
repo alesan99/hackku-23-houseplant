@@ -14,9 +14,22 @@ black hue: #1b2021
 html {
     scroll-behavior: smooth;
 }
+*{
+  font-family: "Poppins";
+  color: #ffffff;
 
+}
 body {
     background-color: #fffbf5;
+}
+.middle-links{
+  font-size: 4vh;
+  font-weight: 600;
+  color: #89023e;
+
+}
+.middle-links:hover{
+  color:#1b2021
 }
 
 h1 { /* title (syllabiscan)*/

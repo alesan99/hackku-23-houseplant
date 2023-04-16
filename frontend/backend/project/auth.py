@@ -67,7 +67,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('auth.results'))
+            return redirect(url_for('home'))
 
         flash(error)
 
@@ -145,8 +145,9 @@ def load_logged_in_user():
 def logout():
     session.clear()
     return redirect(url_for('home'))
-@login_required
+
 @bp.route('/results')
+@login_required
 def results():
     cats = [0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,1]
     db = get_db()
@@ -163,4 +164,10 @@ def results():
     sum_type1 = sum(df[df['q_list']==1][1])
     sum_type2 = sum(df[df['q_list']==0][1])
     sum_type3 = int(((sum_type1+sum_type2)/2))
-    return render_template('auth/results.html',sum_type1= sum_type1,sum_type2 =sum_type2,sum_type3 =sum_type3)
+    if sum_type1 > sum_type2 and sum_type3:
+        winner = "Inattentive Type"
+    if sum_type2 > sum_type1 and sum_type3:
+        winner = "Impulsive-Hyperactive Type"
+    if sum_type3 > sum_type1 and sum_type2:
+        winner = "Combined"
+    return render_template('auth/results.html',value = winner)

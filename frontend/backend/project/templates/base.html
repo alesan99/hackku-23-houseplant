@@ -14,15 +14,17 @@
 		  <nav>
           {% if g.user %}
             <div class="left-links">
-              <a href="/" id="home"><img src="https://tinypic.host/i/o08emC"></a>
+              <a href="/" id="home">Home</a>
             </div>
-            {{ g.user['username'] }}
+            <div>
+              <a>{{ g.user['username'] }}</a>
+            </div>
             <div class="right-links">
               <a href="/auth/logout">Log Out</a>
             </div>
           {% else %}
           <div class="left-links">
-            <a href="/auth/register" id="home"><img src="https://tinypic.host/i/o08emC"></a>
+            <a href="/auth/register" id="register">Register</a>
           </div>
           <div class="right-links">
             <a href="/auth/login">Log In</a>
