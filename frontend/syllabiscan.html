@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<script defer src="pyscript.js" hidden></script>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyllabiScan</title>
+    <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f511.svg" 
+    type="image/x-icon">
+    <!--the above icon is just a placeholder until i develop a logo -bella -->
+</head>
+<body>
+    <header>
+    <div class="topnav">
+        <a href="landing.html">Home</a>
+        <a href="/frontend/backend/project/templates/base.html">Sign In</a>
+    </div>
+    </header>  
+	
+    <div class="content">
+    <section class="section" id="sylscan">
+            <div id="sscontent">
+                <style>
+                    .column {
+                      float: left;
+                      width: 50%;
+                    }
+                    .row:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+                </style>
+        <body>
+        <div class="row">
+            <div class="column">
+            <!-- description and PDF upload -->
+            <h1>SyllabiScan</h1>
+            <p> The ADHD Key SyllabiScan will scan your syllabus for important assignment 
+                and exam dates and deliver that information to you in an easy-to read format 
+                so you don't have to comb through 50 pages of a syllabus!
+            </p>
+            <h4>Instructions</h4>
+            <p>1. Click the "Choose File" button to upload your Syllabus </br>
+                2. Select your file </br>
+                3. Click "Submit". </br>
+                4. Enjoy your Syllabus Scan!</br>
+                <em>Please note that only .TXTs are supported.</em></p>  <!-- should be PDF, TXT for now until converions gets handled -->
+                <form action="/action_page.php">
+                    <!-- <input type="file" id="myFile" name="syllabus" accept="application/pdf"> -->
+                    <!-- <input type="submit"> -->
+					<input type="file" id="fileInput" name="syllabus" accept="application/txt" onchange="handleFileSelect()"/>
+					<button type="button" id="scanbutton">Scan</button>
+					<div id="fileContent"></div>
+					<script>
+					fileContentText = "";
+					function handleFileSelect() {
+						const file = document.getElementById('fileInput').files[0];
+						const reader = new FileReader();
+						reader.readAsText(file);
+						reader.onload = function(event) {
+						fileContentText = event.target.result;
+						document.getElementById('fileContent').innerHTML = "Recieved!";
+						};
+					}
+					function getTaxt() {
+						return fileContentText;
+					};
+					</script>
+            </div>
+            <div class="column">
+            <!--  exam aand assignment information output -->
+                <head>
+                    <style>
+                        table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          width: 100%;
+                        }
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+                        tr:nth-child(even) {
+                          background-color: #dddddd;
+                        }
+                    </style>
+                    </head>
+                    <body>
+                    <h2>EXAM INFORMATION</h2>
+                    <!--The Syllabi Scanner needs to retrieve the date, location, and start/end times.
+                        Where I have written the variables of [hall ###], (day of week, date) 
+                        and etc. is where the output needs to go for each respective value :) -->
+                    <table>
+					<div id="important_dates"></div>
+                    <!--<tr>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td id="location1">[hall ###]</td>
+                        <td id="date1">(day of week, date)</td>
+                        <td id="time1">(starttime-endtime)</td>
+                    </tr>
+                    <tr>
+                        <td>[hall ###]</td>
+                        <td>(day of week, date)</td>
+                        <td>(starttime-endtime)</td>
+                    </tr>
+                    <tr>
+                        <td>[hall ###]</td>
+                        <td>(day of week, date)</td>
+                        <td>(starttime-endtime)</td>
+                    </tr>
+                    </table>-->
+                    <!-- same as above, but with a name, brief description, and due dates/times. -->
+                    <!-- <h2>MAJOR ASSIGNMENTS</h2>
+                    <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>[assignment name]</td>
+                        <td>[brief description]</td>
+                        <td>(due date)</td>
+                        <td>(time due)</td>
+                    </tr>
+                    <tr>
+                        <td>[assignment name]</td>
+                        <td>[brief description]</td>
+                        <td>(due date)</td>
+                        <td>(due time)</td>
+                    </tr>
+                    <tr>
+                        <td>[assignment name]</td>
+                        <td>[brief description]</td>
+                        <td>(due date)</td>
+                        <td>(due time)</td>
+                    </tr>
+                    </table>-->
+                </body>
+            </div>
+        </body>
+        </div>
+    </section>
+    </div>
+	<!--Scan syllabus in python-->
+	<py-config hidden>
+		[splashscreen]
+		autoclose = true
+		
+		[[fetch]]
+		files = ["./backend/syllabiscan.py", "./backend/extraction.py", "./backend/key_words.json", "./backend/syllabiscan.py", "./backend/syllubuses/syll.txt"]
+	</py-config>
+	<py-script src="./backend/syllabiscan.py" hidden></py-script>
+</body>
+</html>

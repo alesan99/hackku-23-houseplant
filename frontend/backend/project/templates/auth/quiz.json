@@ -3,18 +3,67 @@
 	"Quiz": [
 		{
 			"Question": "Do you have trouble with organization?",
-			"Category": 1,
-			"Weight": 1.0
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 1
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
 		},
 		{
 			"Question": "Are you easily distracted?",
-			"Category": 1,
-			"Weight": 1.0
+			"Category": 0
 		},
 		{
 			"Question": "Difficulty staying seated?",
-			"Category": 0,
-			"Weight": 1.0
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
+		},
+		{
+			"Question": "Do you have trouble with organization?",
+			"Category": 0
 		}
 	]
 }

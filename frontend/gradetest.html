@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<script defer src="pyscript.js" hidden></script>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighted Grade Test</title>
+    <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f511.svg" 
+    type="image/x-icon">
+    <!--the above icon is just a placeholder until i develop a logo -bella -->
+</head>
+<body>
+    <header>
+    <div class="topnav">
+        <a href="landing.html">Home</a>
+        <a href="/frontend/backend/project/templates/base.html">Sign In</a>
+    </div>
+    </header>  
+    <style>
+        .column {
+          float: left;
+          width: 50%;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    </style>
+    <body>
+    <div class="row">
+        <div class="column">
+        <h1>Weighted Grade Test</h1>
+        <p> The Grade Weight Tester allows you to find out how prospective assignment 
+            grades will impact your overall course grade so you don't gave to calculate
+            it by hand! [Currently W.I.P.]</p>
+            <!--the inputs on the right column -> will determine the output just below here-->
+            <h4>Your Grade: [output goes here]</h4>
+          </div>
+          <div class="column">
+            <style>
+                table {
+                  font-family: arial, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+                td, th {
+                  border: 1px solid #dddddd;
+                  text-align: left;
+                  padding: 8px;
+                }
+                tr:nth-child(even) {
+                  background-color: #dddddd;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Grade</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname1" name="aname1"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade1" name="grade1"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight1" name="weight1"><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname2" name="aname2"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade2" name="grade2"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight2" name="weight2"><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname3" name="aname3"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade3" name="grade3"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight3" name="weight3"><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname4" name="aname4"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade4" name="grade4"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight4" name="weight4"><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname5" name="aname5"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade5" name="grade5"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight5" name="weight5"><br>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="aname6" name="aname6"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="grade6" name="grade6"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                            <input type="text" id="weight6" name="weight6"><br>
+                        </form>
+                    </td>
+                </tr>
+                </table>
+          </div>
+        </div>
+    </body>
+</body>
