@@ -146,6 +146,24 @@ def logout():
 
 @bp.route('/results')
 def results():
+    cats = [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
     with open("./project/templates/auth/quiz.json") as f:
         var = json.load(f)
         db=get_db()

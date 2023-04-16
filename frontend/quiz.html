@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="quiz.css"/>
-        <script defer src="pyscript.js"></script>
-    </head>
+<link rel="stylesheet" href="styles.css" hidden/>
+<script defer src="pyscript.js" hidden></script>
 
+<html>
 	<body>
 
 	<!--Quiz Questions-->
-	<h1 id="result">Taking Quiz...</h1><br>
+	<div class="container">
+		<div id="heading">
+			<h1 id="key">ADHD Key</h1>
+			<h1 id="type">Type Test</h1>
+		</div>
+		<div class="quizform">
+			<!-- duplicate question classes for new quesitons -->
+		  <div class="question">
+			<p>Do you have trouble with homework?</p>
+			<div class="radios">
+				<p>agree</p>
+				<input type="radio" id="radio1" name="q1" value="1">
+				<input type="radio" id="radio2" name="q1" value="2">
+				<input type="radio" id="radio3" name="q1" value="3">
+				<input type="radio" id="radio4" name="q1" value="4">
+				<input type="radio" id="radio5" name="q1" value="5">
+				<p>disagree</p>
+			</div>
+		  </div>
+		  <br>
+		  
+		  <div id="button">
+		  		<input type="submit" value="Submit" id="submit">
+			</div>
+		</div>
+	  </div>
+	  
+
+	<h1 id="result">Taking Quiz...</h1><br> <!--Result of the Quiz will be sent here-->
+	<h1 id="insert-questions-here" hidden>Taking Quiz...</h1><br> <!--Questions and Answers will be sent here-->
 	<button type="button" id="button">Submit</button>
 
-	<!--Quiz logic in python-->
-	<py-config hidden>
-		[splashscreen]
-		autoclose = true
-		
-		[[fetch]]
-		files = ["./quiz.py", "./quiz.json"]
-	</py-config>
-	<py-script src="./main.py" hidden></py-script>
-
-	<script>
-
-	</script>
 
 	</body>
 </html>
