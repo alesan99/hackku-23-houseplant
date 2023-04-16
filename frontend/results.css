@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+}
+.content{
+    margin-top: 3em;
+    padding: 1em;
+    height: 100vh;
+}
+#result-type{
+    font-size: 5em;
+}
+#inattentdesc h3{
+    font-size: 1.7em;
+}
+.section{
+    margin-top: 10vh;
+}
+
+.info{
+    display: flex;
+    margin-top: 1em;
+}
+.types{
+    width: 80%;
+    height: auto;
+}
+.tools{
+    padding-left: 3em;
+    width: 30%;
+    height: 100vh;
+    margin-left: 0;
+    display: block;
+}
+
+.tools h2{
+    font-size: 3em;
+    height: 5vh;
+}
+
+.tools a{
+    font-size: 1.65em;
+    color: #89023e;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.tools a:hover{
+    font-size: 1.65em;
+    line-height: 2em;
+    color: #30343f;
+    transition: .5s;
+}
