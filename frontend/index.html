@@ -1,43 +1,110 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css" hidden/>
-<script defer src="pyscript.js" hidden></script>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Key</title>
+    <link rel="stylesheet" href="/frontend/backend/project/static/styles.css">
+    <link rel="icon" href="https://tinypic.host/i/akicon.o086mD" 
+    type="image/x-icon">
+</head>
 
-<html>
-	<body>
-
-	<!--Quiz Questions-->
-	<div class="container">
-		<div id="heading">
-			<h1 id="key">ADHD Key</h1>
-			<h1 id="type">Type Test</h1>
-		</div>
-		<div class="quizform">
-			<!-- duplicate question classes for new quesitons -->
-		  <div class="question">
-			<p>Do you have trouble with homework?</p>
-			<div class="radios">
-				<p>agree</p>
-				<input type="radio" id="radio1" name="q1" value="1">
-				<input type="radio" id="radio2" name="q1" value="2">
-				<input type="radio" id="radio3" name="q1" value="3">
-				<input type="radio" id="radio4" name="q1" value="4">
-				<input type="radio" id="radio5" name="q1" value="5">
-				<p>disagree</p>
-			</div>
-		  </div>
-		  <br>
-		  
-		  <div id="button">
-		  		<input type="submit" value="Submit" id="submit">
-			</div>
-		</div>
-	  </div>
-	  
-
-	<h1 id="result">Taking Quiz...</h1><br> <!--Result of the Quiz will be sent here-->
-	<h1 id="insert-questions-here" hidden>Taking Quiz...</h1><br> <!--Questions and Answers will be sent here-->
-	<button type="button" id="button">Submit</button>
-
-
-	</body>
+<header>
+    <nav>
+        <div class="left-links">
+            <a href="index.html" id="home"><img src="/frontend/images/akicon.jpg"></a>
+            <a href="#" id="">Resources</a>
+        </div>
+        <div class="right-links">
+            <a href="#" id="sign">Sign In</a>
+            <a href="#" id="account-logo"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fkey_263069&psig=AOvVaw16uk2kfttyygHfVZHAWB3A&ust=1681698441485000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOjjwYOtrf4CFQAAAAAdAAAAABA5"></a>
+        </div>
+      </nav>
+      
+</header>  
+<body>
+<div class="content">
+    <h1>ADHD Key</h1>
+    <h2><em>Unlock your focus</em></h2>
+        <section class="section" id="home">
+            <div id="homecontent">
+            <a href="#typesntools">
+            <button class="button" id="learnmorebutton">
+            Learn more!
+            </button> </a>
+            </div>
+        </section>
+    <section class="section" id="typesntools">
+    <div id="typnesntoolscontent">
+        <style>
+            .column {
+              float: left;
+              width: 50%;
+            }
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+        </style>
+        <body>
+            <div class="row">
+              <div class="column">
+                <h3>3 Types</h3>
+                <h2>1) Inattentive Type</h2>
+                <p> People with the inattentive type of ADHD have trouble focusing, 
+                    are easily distracted, and struggle paying attention for long 
+                    periods of time. This can manifest in seemingly forgetfulness, 
+                    misplacing belongings, and having difficulty completing tasks.</p>
+                <h2>2) Hyperactive-Impulsive Type</h2>
+                <p> People with the hyperactive-impulsive type do not struggle staying
+                    focused or getting distracted, but instead constantly feel the need 
+                    to move. This can manifest in fidgeting, impatience, and blurting out 
+                    responses. They tend to make impulsive decisions as well.</p>
+                <h2>3) Combined Type</h2>
+                <p> People of the combined type have behavior typical of both inattentive 
+                    and hyperactive-impulsive types. This is the most common type of ADHD.</p> 
+                <h3>Unsure of your type?</h3> 
+                <button onclick="window.location.href='quiz.html';">TAKE THE QUIZ</button>
+              </div>
+              <div class="column">
+                <h3>3 Tools</h3>
+                <a href="syllabiscan.html"><h2>SyllabiScan</h2></a>
+                <p>The ADHD Key SyllabiScan will scan your syllabus for important assignment 
+                    and exam dates and deliver that information to you in an easy-to read format 
+                    so you don't have to comb through 50 pages of a syllabus! </p>
+                <a href="studyskills.html"><h2>Study Skill Plan</h2></a>
+                <p>The Study Skill Plan will create a personalized list of recommendations
+                    and tips for you, catered to your specific needs and struggles in studying.</p>
+                <a href="gradetest.html"><h2>Grade Weight Tester</h2></a>
+                <p>The Grade Weight Tester allows you to find out how prospective assignment 
+                    grades will impact your overall course grade so you don't gave to calculate
+                    it by hand! [Currently W.I.P.]</p>
+                <h3>& many more</h3>
+                <button onclick="window.location.href='#resources';">RESOURCES</button>
+              </div>
+            </div>
+        </body>
+    </div>
+    </section>
+    <section class="section" id="resources">
+    <h2>ADHD Key Resources</h2>
+        <body>
+        <div class="row">
+          <div class="column">
+            <input type="text" placeholder="Write here..." name="text" class="input">
+            <!--<form method="get" action="http://www.google.com/search">
+                <input type="text"   name="q" size="31"
+                maxlength="255" value=""/>
+                <input type="submit" value="Google Search"/>
+                <input type="radio"  name="sitesearch" value=""/>
+                The Web
+                <input type="radio"  name="sitesearch"
+                value="landing.html" checked /> ADHD Key<br/>
+              </form> -->
+        </div>
+        </body>
+    </section>
+</div>
+</body>
 </html>

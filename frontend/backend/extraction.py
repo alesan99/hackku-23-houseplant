@@ -18,6 +18,7 @@ class extractor:
 		keywords = ["midterm", "exam", "test", "due"]
 		cursor = 0
 		# print("starting scan..")
+		self.data.append(["Name","Date","Time"])
 		while cursor < self.input_len and cursor >= 0:
 			cursor = s.find('/', cursor+1, -1) # todo, use predefined key words
 			if cursor != -1:
@@ -41,17 +42,32 @@ class extractor:
 					if f2 > -1:
 						important2 = min(important2, f2)
 						keyword2 = keywords[kw]
-				print(important1, important2)
 
 				if space1 != -1 and space2 != -1 and space1 != space2 and ((abs(important1-cursor) < tolerance) or (abs(important2-cursor) < tolerance)):
 					dist1 = abs(important1-cursor)
 					dist2 = abs(important2-cursor)
 					closestkeyword = "Important Date"
 					if dist1 < dist2:
-						closestkeyword = keyword1
+						closestkeyword = keyword1.capitalize()
+						kws1 = s.rfind(" ", 0, important1)
+						kws1 = s.rfind(" ", 0, kws1-1)
+						kws1 = s.rfind(" ", 0, important1+1)
+						kws2 = s.find(" ", kws1+1)
 					else:
-						closestkeyword = keyword2
-					self.data.append([closestkeyword, s[space1:space2+1]])
+						closestkeyword = keyword2.capitalize()
+						kws1 = s.rfind(" ", 0, important2)
+						kws1 = s.rfind(" ", 0, kws1-1)
+						kws2 = s.find(" ", important2+1)
+						kws2 = s.find(" ", kws2+1)
+					possibledate = s[space1:space2+1].strip()
+					possibledate = possibledate.replace("(","")
+					possibledate = possibledate.replace(")","")
+					possibledate = possibledate.replace(".","")
+					possibledate2 = possibledate.replace("/","")
+					
+					if possibledate2.isdigit():
+						name = s[kws1:kws2].strip()
+						self.data.append([name.capitalize(), possibledate, "N/A"])
 					# print("found at ", cursor)
 		# self.data = [["midterm time", "1/7"]]
 		# print("done!")

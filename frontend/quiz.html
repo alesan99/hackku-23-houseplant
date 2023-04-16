@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="quiz.css"/>
-        <script defer src="pyscript.js"></script>
-    </head>
+<link rel="stylesheet" href="./backend/project/static/styles.css">
+<script defer src="pyscript.js" hidden></script>
 
+<html>
+	<header>
+		<nav>
+			<div class="left-links">
+				<a href="index.html" id="home"><img src="https://tinypic.host/i/o080Si"></a>
+				<a href="#" id="">Resources</a>
+			</div>
+			<div class="right-links">
+				<a href="#" id="sign">Sign In</a>
+				<a href="#" id="account-logo"><img src="https://tinypic.host/images/2023/04/16/loginicon.png" alt="loginicon.png" border="0" />></a>
+			</div>
+		  </nav>
+	</header>
 	<body>
 
-	<!--Quiz Questions-->
-	<h1 id="result">Taking Quiz...</h1><br>
-	<button type="button" id="button">Submit</button>
-
-	<!--Quiz logic in python-->
-	<py-config hidden>
-		[splashscreen]
-		autoclose = true
 		
-		[[fetch]]
-		files = ["./quiz.py", "./quiz.json"]
-	</py-config>
-	<py-script src="./main.py" hidden></py-script>
+	<h1 id="insert-questions-here" hidden>Taking Quiz...</h1><br> <!--Questions and Answers will be sent here-->
+	<h1 id="result"></h1><br> <!--Questions and Answers will be sent here-->
+	<!--Quiz Questions-->
+	<div class="container">
+		<div id="heading">
+			<h1 id="key">ADHD Key</h1>
+			<h1 id="type">Type Test</h1>
+		</div>
+		<div class="quizform" id="inserted">
+			<!-- duplicate question classes for new quesitons -->
+		  <div class="question">
+			<p>Do you have trouble with homework?</p>
+			<div class="radios">
+				<p>agree</p>
+				<input type="radio" id="radio1" name="q1" value="1">
+				<input type="radio" id="radio2" name="q1" value="2">
+				<input type="radio" id="radio3" name="q1" value="3">
+				<input type="radio" id="radio4" name="q1" value="4">
+				<input type="radio" id="radio5" name="q1" value="5">
+				<p>disagree</p>
+			</div>
+		  </div>
+		  <br>
+		  <div id="inserted"></div>
+		  
+		  <div id="button">
+		  		<a href="index.html"><input type="submit" value="Submit" id="submit"></a>
+			</div>
+		</div>
 
-	<script>
-
-	</script>
+		
+		<!--Quiz logic in python-->
+		<py-config hidden>
+			[splashscreen]
+			autoclose = true
+			
+			[[fetch]]
+			files = ["./backend/quiz.py", "./backend/quiz.json", "./backend/characteristics.py", "./backend/characteristics.json"]
+		</py-config>
+		<py-script src="./backend/main.py" hidden></py-script>
+	  </div>
 
 	</body>
 </html>

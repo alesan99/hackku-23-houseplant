@@ -4,36 +4,54 @@
     font-family: "Poppins";
     font-size: 2vh;
     color: #1b2021;
+    scroll-behavior: smooth;
 }
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #89023e;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-links {
+  display: flex;
+}
+
+.right-links {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: #fffbf5;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    color: #30343f;
+    transition: 1s;
+  }
+
+
+/* BODY */
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-nav{
-    width: 100%;
-    height: 50px;
-    background-color: #89023e;
-    color: azure;
-    
-    
+    background-color: #fffbf5;
 }
 
-nav li{
-    display:inline;
-    padding: 0;
-    width:auto;
-    color: azure;
-    float: right;
-}
-
-nav li a {
-    display:inline;
-    padding: 0;
-    width:auto;
-    color: azure;
-}
 .container {
     padding: 2em;
     display: flex;
@@ -68,11 +86,10 @@ input[type="radio"] {
     outline: none;
     border-radius: 50%;
     width: 20px;
-    height: 1200px;
+    height: 20px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     margin-right: 1vh;
-    vertical-align: middle;
 }
   
 .radios{
@@ -80,7 +97,8 @@ input[type="radio"] {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
-    margin-top: -.0em;
+    margin-top: -.25em;
+    margin-left: 2em;
 }
 /* big radios */
 #radio1, #radio5{
@@ -171,3 +189,4 @@ h1{
     /* Push the button downwards when pressed */
     transform: translateY(0);
 }
+

@@ -5,10 +5,10 @@ class Question:
     def __init__(self, data):
         self.question = data["Question"]
         self.category = data["Category"]
-        self.weight = data["Weight"] # float
+        self.weight = 1.0
 
     def getScore(self, val): # val should be 1-5
-        return val*self.weight
+        return val
 
 class Quiz:
     def __init__(self, json_path):

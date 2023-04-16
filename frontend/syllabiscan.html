@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="sylstyles.css">
 <script defer src="pyscript.js" hidden></script>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyllabiScan</title>
-    <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f511.svg" 
-    type="image/x-icon">
-    <!--the above icon is just a placeholder until i develop a logo -bella -->
+    <link rel="icon" href="https://tinypic.host/i/o08emC" type="image/x-icon">
 </head>
 <body>
     <header>
-    <div class="topnav">
-        <a href="landing.html">Home</a>
-        <a href="/frontend/backend/project/templates/base.html">Sign In</a>
-    </div>
-    </header>  
+        <nav>
+            <div class="left-links">
+                <a href="index.html" id="home"><img src="https://tinypic.host/images/2023/04/16/akicon.png" alt="akicon.png" border="0" /></a></a>
+            </div>
+            <div class="right-links">
+                <a href="#" id="account-logo"><img src="https://tinypic.host/images/2023/04/16/loginicon.png"></a>
+            </div>
+          </nav>
+    </header> 
 	
     <div class="content">
     <section class="section" id="sylscan">
             <div id="sscontent">
-                <style>
-                    .column {
-                      float: left;
-                      width: 50%;
-                    }
-                    .row:after {
-                      content: "";
-                      display: table;
-                      clear: both;
-                    }
-                </style>
         <body>
         <div class="row">
+            <style>
+                .column {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+            </style>
             <div class="column">
             <!-- description and PDF upload -->
             <h1>SyllabiScan</h1>
@@ -41,7 +43,7 @@
                 and exam dates and deliver that information to you in an easy-to read format 
                 so you don't have to comb through 50 pages of a syllabus!
             </p>
-            <h4>Instructions</h4>
+            <h2>Instructions</h2>
             <p>1. Click the "Choose File" button to upload your Syllabus </br>
                 2. Select your file </br>
                 3. Click "Submit". </br>
@@ -70,7 +72,7 @@
 					</script>
             </div>
             <div class="column">
-            <!--  exam aand assignment information output -->
+            <!--  exam and assignment information output -->
                 <head>
                     <style>
                         table {
@@ -89,12 +91,13 @@
                     </style>
                     </head>
                     <body>
-                    <h2>EXAM INFORMATION</h2>
+                    <h3>IMPORTANT DATES</h3>
                     <!--The Syllabi Scanner needs to retrieve the date, location, and start/end times.
                         Where I have written the variables of [hall ###], (day of week, date) 
                         and etc. is where the output needs to go for each respective value :) -->
                     <table>
-					<div id="important_dates"></div>
+					<div id="important_dates">
+					</div>
                     <!--<tr>
                         <th>Location</th>
                         <th>Date</th>

@@ -15,6 +15,8 @@ def scan(placeholder):
 # Important dates
 def display(data):
 	t1 = '<table>'
+	# newDiv = document.createElement("div")
+	# newDiv.innerHTML = f'<p>{data[i][0]},{data[i][1]}</p>'
 	for i in range(len(data)):
 		# newDiv = document.createElement("div")
 		# newDiv.innerHTML = f'<p>{data[i][0]},{data[i][1]}</p>'
