@@ -1,0 +1,153 @@
+/*  COLOR THEME HEXES
+light pink: #ffd9da
+medium pink: #ea638c
+magenta: #89023e
+blue gray: #30343f
+black hue: #1b2021
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* h1= SyllabiScan title
+    h2 = instructioins
+    h3 = exam info
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffbf5;
+}
+
+h1 { /* title (syllabiscan)*/
+    font-family: "Poppins";
+    font-size: 9vh;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, #89023e, #ea638c);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h2 {        /* instructions header*/
+    font-family: "Poppins";
+    font-size: 5vh;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, #89023e, #ea638c);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h3 {        /* assignment info header*/
+    font-family: "Poppins";
+    font-size: 7vh;
+    background-image: linear-gradient(to bottom, #ea638c, #89023e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+p {         /* description, instructions*/
+    font-family: "Poppins";
+    font-size: 3vh;
+    color: #1b2021;
+}
+
+button {
+    background-image: linear-gradient(to bottom, #89023e, #ea638c);
+    border: none;
+    font-family: "Poppins";
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #ffd9da;
+    box-shadow: 0 0.4rem #61022d;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background-image: linear-gradient(to bottom, #ea638c, #89023e);
+    color: white;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #89023e;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+img {
+    width: 40px;
+    padding: 1em;
+    height: 40px;
+}
+
+.input__container--variant {
+    background: linear-gradient(to bottom, #ffd9da, #ffd9da);
+    border-radius: 30px;
+    max-width: 13em;
+    padding: 1em 1em;
+  }
+  
+  .shadow__input--variant {
+    filter: blur(25px);
+    border-radius: 30px;
+    background-color: #ffd9da;
+    opacity: 0.5;
+  }
+  
+  .input__button__shadow--variant {
+    border-radius: 15px;
+    background-color: #89023e;
+    padding: 10px;
+    border: none;
+  }
+  
+  .input__button__shadow--variant:hover {
+    background-color: #3C6659;
+  }
+  
+  .input__search--variant {
+    width: 13em;
+    align-items: center;
+    border-radius: 13em;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font-size: 1.2em;
+    color: #89023e;
+    background-color: transparent;
+  }
+  
+  .input__search--variant::placeholder {
+    color: #89023e;
+    opacity: 0.7;
+  }
+  
+  .input__container--variant {
+    background: linear-gradient(to bottom, #ffd9da, #ffd9da);
+    border-radius: 1.5em;
+    max-width: 14em;
+    padding: 1em;
+    box-shadow: 0em 1em 3em #beecdc64;
+  }
+  
