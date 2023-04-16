@@ -1,5 +1,7 @@
 import functools
 import json
+import sqlite3
+import pandas as pd
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
@@ -65,7 +67,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('auth.quiz'))
+            return redirect(url_for('auth.results'))
 
         flash(error)
 
@@ -91,7 +93,7 @@ def quiz():
             user = db.execute(
                 'DELETE FROM quiz WHERE user_id = ?', (id,)
             ).fetchall()
-            for y in range(3):
+            for y in range(16):
                 b = "q"+str(y)
                 x = float(request.form[b])
                 for i in range(6):
@@ -143,34 +145,22 @@ def load_logged_in_user():
 def logout():
     session.clear()
     return redirect(url_for('home'))
-
-@bp.route('/results')
+@login_required
+@bp.route('/results', methods=('GET','PORT'))
 def results():
-    cats = [
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1
-    ]
-    with open("./project/templates/auth/quiz.json") as f:
-        var = json.load(f)
-        db=get_db()
-        id = session['user_id']
-        user_type = db.execute(
-            'SELECT id FROM user WHERE user_id = ?', (id,)
-            ).fetchall()
-        
-
-    return
+    cats = [0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,1]
+    db = get_db()
+    id = session['user_id']
+    error = None
+    user = db.execute(
+    'SELECT * FROM quiz WHERE user_id = ?', (id,)
+    ).fetchall()
+    df = pd.DataFrame(
+        user
+    )
+    df.drop(df.columns[0], axis=1, inplace=True)
+    df["q_list"] = cats
+    sum_type1 = sum(df[df['q_list']==1][1])
+    sum_type2 = sum(df[df['q_list']==0][1])
+    sum_type3 = int(((sum_type1+sum_type2)/2))
+    return render_template('auth/results.html',sum_type1= sum_type1,sum_type2 =sum_type2,sum_type3 =sum_type3)

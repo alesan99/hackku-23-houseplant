@@ -94,32 +94,9 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  
-  .left-links {
-    display: flex;
-  }
-  
-  .right-links {
-    display: flex;
-  }
-  
-  nav a {
-    display: block;
-    color: #fffbf5;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .15em;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-      color: #30343f;
-      transition: 1s;
-    }
-  
+#home, #sign-in{
+  margin-top: 3vh;
+}
 
 img {
     width: 40px;

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Results{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    {% for table in tables %}
+        {{titles[loop.index]}}
+        {{ table|safe }}
+    {% endfor %}
+{% endblock %}
