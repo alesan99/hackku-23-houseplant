@@ -22,4 +22,4 @@ CREATE TABLE quiz (
   qustion_answer INTEGER NOT NUll,
   user_id INTEGER NOT NULL,
   FOREIGN KEY(user_id) REFERENCES user(id)
-)
+);

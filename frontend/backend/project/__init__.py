@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask, render_template, redirect,url_for
-
+import pandas as pd
 
 def create_app(test_config=None):
     # create and configure the app
@@ -37,11 +37,14 @@ def create_app(test_config=None):
     def to_auth_quiz():
         return redirect(url_for("auth.quiz"))
     
+
+    
   
     
     
     
     from . import db, auth
+
     db.init_app(app)
     app.register_blueprint(auth.bp)
     return app
