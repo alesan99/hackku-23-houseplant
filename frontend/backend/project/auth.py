@@ -145,29 +145,10 @@ def load_logged_in_user():
 def logout():
     session.clear()
     return redirect(url_for('home'))
-
+@login_required
 @bp.route('/results', methods=('GET','PORT'))
 def results():
-    cats = [
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1
-    ]
-    with open("./project/templates/auth/quiz.json") as f:
-        var = json.load(f)
+    cats = [0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,1]
     db = get_db()
     id = session['user_id']
     error = None
@@ -178,5 +159,8 @@ def results():
         user
     )
     df.drop(df.columns[0], axis=1, inplace=True)
-    df.add()
-    return render_template('auth/math_results.html',tables =[df.to_html(classes='data')],titles=df.columns.values)
+    df["q_list"] = cats
+    sum_type1 = sum(df[df['q_list']==1][1])
+    sum_type2 = sum(df[df['q_list']==0][1])
+    sum_type3 = int(((sum_type1+sum_type2)/2))
+    return render_template('auth/results.html',sum_type1= sum_type1,sum_type2 =sum_type2,sum_type3 =sum_type3)
