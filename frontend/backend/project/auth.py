@@ -153,7 +153,6 @@ def results():
         user_type = db.execute(
             'SELECT id FROM user WHERE user_id = ?', (id,)
             ).fetchall()
-        question = var[Quiz]
-        if question[catergory]
+        
 
     return
