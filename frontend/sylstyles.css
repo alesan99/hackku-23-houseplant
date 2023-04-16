@@ -81,7 +81,7 @@ p {         /* description, instructions*/
 }
 
 button {
-    background-color: #89023e;
+    background-image: linear-gradient(to bottom, #89023e, #ea638c);
     border: none;
     font-family: "Poppins";
     padding: 1rem;
@@ -100,7 +100,7 @@ button {
    }
    
    button:hover:not(:disabled) {
-    background: #a90f54;
+    background-image: linear-gradient(to bottom, #ea638c, #89023e);
     color: white;
    }
    
